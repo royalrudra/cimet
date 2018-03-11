@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--head start-->
+<head>
+    <!--meta tag start-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="cimet">
+    <meta name="author" content="cimet">
+    <meta name="copyright" content="cimet">
+
+    <!--title-->
+    <title>cimet || Energy saver</title>
+
+    <!-- faveicon start   -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+
+    <!-- stylesheet start -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<!--head end-->
+<body class="life-support">
+    <div class="common-head">
+        <div class="text">
+            <h4>Surb, 2100, NSW <span><img src="image/common-head.png"></span></h4>
+        </div>
+    </div>
+    <div class="common-banner">
+        <div class="marker">
+            <img src="image/marker.png">
+        </div>
+        <div class="box-outer">
+            <div class="box-wrapper">
+                <div class="box-content">
+                    <h2>Does anyone at the property <br>have life support equipment?</h2>
+                    <div class="action-buttons circle">
+                        <button class="cimet-btn previous">Yes</button>
+                        <button class="cimet-btn grey">No</button>
+                        <a data-toggle="collapse" href="#propertyCollapse" role="button" aria-expanded="false" aria-controls="propertyCollapse"><img src="image/note.png"></a>
+                        <div class="collapse" id="propertyCollapse">
+                          <div class="card card-body">
+                            <button type="button" class="close">
+                              <img src="image/close.png">
+                          </button>
+                          <h2>What is classified as Life Support?</h2>
+                          <p>According to the National Energy Retail Rules and the Victorian Energy Retail Code, equipment that classifies as being life support dependent, are:</p>
+                          <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>An oxygen concentrator;</li>
+                                    <li>An intermittent peritoneal dialysis machine;</li>                                        
+                                    <li>A kidney dialysis machine;</li>
+                                    <li>A chronic positive airways pressure respirator(CPAP);</li>
+                                    <li>Crigler-Najjar syndrome phototherapy equipment;</li>
+                                    <li>A ventilator for life support; </li>
+                                </ul>                                    
+                            </div>  
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>In relation to a particular customer;</li>
+                                    <li>Any other equipment (whether fuelled by electricity or gas) that a registered medical practitioner certifies is required for a person residing at the customer’s premises for life support or otherwise where the customer provides a current medical certificate certifying that a person residing at the customer’s premises has a medical condition which requires continued supply of gas.</li>                                        
+                                </ul>                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                    
+        </div>
+        <h2>Are you moving?</h2>
+        <div class="action-buttons circle">
+            <button class="cimet-btn previous" data-toggle="collapse" href="#movingCollapse" role="button" aria-expanded="false" aria-controls="movingCollapse">Yes</button>
+            <button class="cimet-btn grey" id="calender-close">No</button>
+            <div class="collapse" id="movingCollapse">
+                <div id="datepicker" data-date="12/03/2012">
+                    <h2>When are you moving</h2>
+                </div>
+                <input type="hidden" id="my_hidden_input">
+                
+            </div>
+        </div>  
+
+        <div class="note">
+            <img src="image/note.png">
+            <p>If you are moving, the main switch to the electricity meter must be off on the connection date. For your connection/reading to occur, there will need to be clear access to your meter. If there is no clear access to you meter, please contact your new retailer.
+            </p>                    
+        </div>
+
+        <div class="action-buttons">
+            <button class="cimet-btn grey previous" onclick="location.href='property-type.html';">Previous</button>
+            <button class="cimet-btn" onclick="location.href='electricity-details.html';">next</button>
+        </div>
+    </div>
+</div>
+</div>
+<footer class= "bottom_footer hidden-sm-down inner-footer">
+  <p><img src="image/security.png">Your security guaranteed</p>
+  <nav class="common-nav">
+    <a class="nav-link" href="#">ABOUT US</a>
+    <a class="nav-link" href="#">TERMS & CONDITIONS</a>
+</nav>
+<p class="copy_right">
+    © 2017 BulkTTTbargains. ABN 81 609 882 804 Australian Credit License Number 483595
+</p>
+</footer>
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/datepicker.min.js"></script>
+<script type="text/javascript">
+    $('.close').click(function(){
+        $('#propertyCollapse').collapse('hide');
+    });
+
+     $('#calender-close').click(function(){
+        $('#movingCollapse').collapse('hide');
+    });
+
+    $('#datepicker').datepicker(
+        {
+            leftArrow:'<',
+            rightArrow:'>'
+        }
+        );
+    $('#datepicker').on('changeDate', function() {
+        $('#my_hidden_input').val(
+            $('#datepicker').datepicker('getFormattedDate')        
+            );
+        // datepicker-title
+    });
+</script>
+<script>
+    $('.action-buttons.circle button').click(function(){
+        $('.action-buttons.circle button').removeClass("active");
+        $(this).addClass("active");
+    });
+</script>
+
+</body>
+</html>
