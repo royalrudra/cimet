@@ -105,11 +105,6 @@
                                         <label><img src="image/finish.png">Finish</label>
                                         <input  class="cimet-btn grey datepicker" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="movingCollapse" placeholder="DD/MM//YYYY"></input>                                        
                                     </div>
-                                    <!-- <div class="collapse" id="movingCollapse">
-                                        <div id="datepicker" data-date="12/03/2012">
-                                        </div>
-                                        <input type="hidden" id="my_hidden_input">                                        
-                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -187,7 +182,7 @@
 
                                 </div>
                                 <div class="peak_body" id="peak-only">
-                                  <form class="form-inline" role="form">
+                                  <form class="form" role="form">
                                     <div class="form-group row">
                                       <label for="peak-input" class=" col-form-label">Peak</label>
                                       <input class="form-control cimet-btn grey" type="text" placeholder="Your usage" id="peak-input">
@@ -196,9 +191,10 @@
                                   </div>
                                   <div class="form-group row form-checkbox">
                                     <div class="form-check">
-                                      <label class="form-check-label">
-                                        <input class="form-check-input" id="electricity_check" type="checkbox"> Do you have a control load two usage?
-                                    </label>
+                                      <div class="form-check-label">
+                <input id="electricity_check" type="checkbox"> 
+                <label for="electricity_check"> Do you have a control load two usage?</label>
+            </div>
                                 </div>
                             </div>                               
                         </form>
@@ -216,7 +212,7 @@
                     </div>
 
                     <div class="peak_body" id="peak-control">
-                      <form class="form-inline" role="form">
+                      <form class="form" role="form">
                         <div class="form-group row">
                           <label for="peak-input" class=" col-form-label">Peak</label>
                           <input class="form-control cimet-btn grey" type="text" placeholder="Your usage" id="peak-input">
@@ -231,9 +227,10 @@
                     </div>
                     <div class="form-group row form-checkbox">
                         <div class="form-check">
-                          <label class="form-check-label">
-                            <input class="form-check-input" id="electricity_check" type="checkbox"> Do you have a control load two usage?
-                        </label>
+                          <div class="form-check-label">
+                            <input id="electricity_check" type="checkbox"> 
+                            <label for="electricity_check"> Do you have a control load two usage?</label>
+                        </div>
                     </div>
                 </div> 
             </form>
@@ -251,18 +248,18 @@
             </div>
         </div>
         <div class="peak_body" id="usage-time">
-          <form class="form-inline" role="form">
+          <form class="form" role="form">
             <div class="form-group row">
-              <label for="peak-input" class=" col-form-label">Peak</label>
-              <input class="form-control cimet-btn grey" type="text" placeholder="Your usage" id="peak-input">
+              <label for="peak2" class=" col-form-label">Peak</label>
+              <input class="form-control cimet-btn grey" type="text" placeholder="Your usage" id="peak2">
               <P>kWh</P>
           </div>
           <div class="form-group row form-checkbox">
             <div class="form-check">
-              <label class="form-check-label">
+              <div class="form-check-label">
                 <input id="electricity_check" type="checkbox"> 
                 <label for="electricity_check"> Do you have a control load two usage?</label>
-            </label>
+            </div>
         </div>
     </div>                               
 </form>
