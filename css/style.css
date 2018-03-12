@@ -1566,6 +1566,13 @@ calendar
 	border-bottom: 2px solid #dbd9d9;
 	min-height: 60px;
 	background-color: rgba(243,243,243,0.61);
+
+}
+
+.full-nav .menu-wrapper {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .full-nav h4 {
@@ -1576,12 +1583,23 @@ calendar
 }
 
 .full-nav .common-nav li {
-	border-left: 1px solid #454444;	
+	position: relative;
+}
+
+.full-nav .common-nav li::before {
+	position: absolute;
+	content:'';
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1px;
+	height: 16px;
+	background-color: #454444;
 }
 
 
-.full-nav .common-nav li:first-child {
-	border: none;
+.full-nav .common-nav li:first-child::before {
+	display: none;
 }
 
 .full-nav .common-nav li a {
@@ -1592,7 +1610,7 @@ calendar
 	margin: 10px;
 	border:none;
 	padding: 12px 15px;
-	min-width: 100px;
+	/*min-width: 100px;*/
 }
 
 .full-nav .common-nav li a:hover,
@@ -1603,12 +1621,21 @@ calendar
 	border-radius: 50px;
 }
 
-.full-nav .common-nav ul, .full-nav .common-nav button {
+.full-nav .common-nav ul, .full-nav button {
 	display: inline-block;
 }
 
+.full-nav .menu-wrapper button.grey {
+	min-width: 0;
+}
 
-.full-nav .common-nav .compare-btn .count {
+.full-nav .menu-wrapper button.grey:first-child {
+	margin-right: 8px;
+	padding: 8px 30px;
+}
+
+
+.full-nav .compare-btn .count {
 	/*position: absolute;*/
 	background: #1d1489;
 	height: 30px;
@@ -1807,12 +1834,12 @@ calendar
 .electricity-measure .box-wrapper {
 	color: black;
 	max-width: 88%;
+	padding: 50px 0;
 }
 
 .row-header {
 	text-align: left;
-	border-bottom: 2px solid #dbd9d9;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 }
 
 .electricity-compare , .gas-compare {
@@ -1853,6 +1880,7 @@ calendar
 	border: 2px solid #f6f6f6;
 	width: 100%;
 	text-align: center;
+	background-color: white;
 }
 
 .electricity-compare .brand-logo img , .gas-compare .brand-logo img {
@@ -1920,6 +1948,49 @@ calendar
 	color: #0a0d7d;
 	position: absolute;
 	z-index: 4;
+}
+
+.electricity-measure .box-wrapper .row {
+	position: relative;
+	margin: 0px 50px 30px 50px;
+}
+
+.electricity-measure .box-wrapper > .row:nth-child(odd)::after {
+	position: absolute;
+	content: '';
+	height: 5px;
+	background: #0a0d7d;
+	width: 100%;
+	padding:0;
+	bottom: -20px;
+	left:0;
+} 
+
+.electricity-measure .box-wrapper > .row:first-child::after {
+	height: 2px;
+	background: #dbd9d9;
+}
+
+.sponsored {
+	background-color: #5b1cfa;
+}
+
+.sponsored h3, .sponsored p, .sponsored h1, .sponsored li, .electricity-compare  .bill-gst h1 {
+	color: white;
+}
+
+.sponsored h3 {
+	text-align: left;
+	text-transform: uppercase;
+	background: rgba(91,28,250,1);
+	background: -moz-linear-gradient(45deg, rgba(91,28,250,1) 0%, rgba(253,114,99,1) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(91,28,250,1)), color-stop(100%, rgba(253,114,99,1)));
+	background: -webkit-linear-gradient(45deg, rgba(91,28,250,1) 0%, rgba(253,114,99,1) 100%);
+	background: -o-linear-gradient(45deg, rgba(91,28,250,1) 0%, rgba(253,114,99,1) 100%);
+	background: -ms-linear-gradient(45deg, rgba(91,28,250,1) 0%, rgba(253,114,99,1) 100%);
+	background: linear-gradient(45deg, rgba(91,28,250,1) 0%, rgba(253,114,99,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', endColorstr='#fd7263', GradientType=1 );
+	padding: 26px 50px;
 }
 
 
