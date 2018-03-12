@@ -1843,6 +1843,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', end
 	    filter: brightness(0) invert(1);
 }
 
+.sponsored {
+    background-color: #5b1cfa;
+}
 .apply-now {
 	min-width: auto;
 	width: 100%;
