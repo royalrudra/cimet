@@ -1427,121 +1427,47 @@ select#gas-select{
 		text-align: left;
 	}
 }
-
-/*==========================
-calendar
-==========================*/
-.action-buttons #movingCollapse,
-.datepicker-days {
-	margin: 40px auto;
-	color: #0a0d80;
-	cursor: pointer;
+/* ===========================
+		DATEPICKER
+============================*/
+.my-datepicker{
+	width: 100%;
+    padding-left: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
-.action-buttons #movingCollapse .datepicker-days {
-	width: 480px !important;	
+.datepicker-inline {
+    width: 100%;
+}
+.my-datepicker td{
+	padding: 9px;
+    font-size: 35px;
+}
+.day{
+	padding: 11px !important; 
+}
+.datepicker-switch{
+	font-size: 30px;
+}
+.dow{
+	font-size: 34px;
 }
 
-.datepicker-days { 
-	width: 340px;
-}
-.action-buttons #datepicker h2 {
-	margin-bottom: 40px;
-}
+.table-condensed thead > tr:nth-child(2){
 
-.action-buttons #datepicker thead,
-.datepicker-days thead {
-	box-shadow: -1px 2px 43px 0px rgba(0, 0, 0, 0.25);
-	font-family: 'muliregular';
-	font-size: 20px;
+    border: 2px solid black;
+	outline: white solid 10px;
+	box-shadow: -1px 2px 43px 0px red;
+    
 }
-
-.action-buttons #datepicker thead th,
-.datepicker-days thead th {
-	padding: 10px 5px;
-	text-align: center;
+.datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active {
+    background-color: #003399 \9;
+    border-radius: 50%;
 }
-
-.action-buttons #datepicker thead tr:first-child,
-.action-buttons #datepicker thead tr:nth-child(3),
-.datepicker-days thead tr:first-child,
-.datepicker-days thead tr:nth-child(3) {
-	display: none;
-}
-
-.action-buttons #datepicker thead tr:nth-child(2),
-.datepicker-days thead tr:nth-child(2) {
-	/*border: 3px solid #dbd9d9;*/
-	margin:10px;
-	padding: 10px 5px;
-	border-radius: 30px;
-	position: relative;
-}
-
-.action-buttons #datepicker thead tr::after,
-.datepicker-days thead tr::after {
-	border: 3px solid #dbd9d9;
-	width: 80%;
-	/*position: absolute;*/
-	content: "";
-	left:0;
-	top: 0;
-}
-
-.action-buttons #datepicker td,
-.datepicker-days td {
-	font-family: 'muliextrabold';
-	font-size: 28px;
-	padding: 6px;	
-	text-shadow: none;
-	box-shadow: none;
-	text-align: center;
-
-}
-
-.datepicker-days td {
-	font-size: 20px;
-}
-
-.action-buttons .old.day,
-.action-buttons .new.day,
-.datepicker-days .old.day,
-.datepicker-days .new.day {
-	color: #dbd9d9;
-	background: none;
-}
-
-.action-buttons .day.active,
-.datepicker-days .day.active {
-	position: relative;
-	color: white;
-	z-index: 1;
-}
-
-#movingCollapse .day.active::after,
-.datepicker-days .day.active::after {
-	position: absolute;
-	background-color: #9e40bb;
-	border-radius: 50%;
-	content:"";
-	left: 0;
-	z-index: -1;
-	box-shadow: -1px 2px 43px 0px rgba(0, 0, 0, 0.25);
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-}
-
-.action-buttons #movingCollapse .datepicker-days .day.active::after {
-	height: 69px !important;
-	width: 69px !important;
-
-}
-
-.datepicker-days .day.active::after {
-	height: 50px;
-	width: 50px;
-}
+/* ===========================
+		DATEPICKER END
+============================*/
 
 /*MElectricity measure*/
 .gradient-banner .text {
