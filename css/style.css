@@ -992,10 +992,10 @@ gas-details
 .select .selectize-control.single .selectize-input.dropdown-active:after {
 	transform: rotate(180deg);
 }
-
+/* 
 .select .selectize-control.single .selectize-input #gas-select-selectized {
 	width: 100% !important;
-}
+} */
 
 select#gas-select{
 	-webkit-appearance: none;
