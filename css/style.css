@@ -328,10 +328,10 @@ button,
 .cimet-btn:visited {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
-	/*transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 	-webkit-transition:all 0.5s ease-in-out;
 	-ms-transition:all 0.5s ease-in-out;
-	-moz-transition:all 0.5s ease-in-out;*/
+	-moz-transition:all 0.5s ease-in-out;
 	color: #fff;
 	font-size: 1em;
 	text-transform: uppercase;
@@ -554,7 +554,6 @@ common-banner
 
 .home_banner li p {
 	font-size: 1.25em;
-	/*width: calc(100% - 118px);*/
 	margin-right: 12px;
 	font-family: 'muliextrabold';
 }
@@ -603,7 +602,6 @@ common-banner
 footer {
 	padding: 10px 40px;
 	background-color: #f7f7f9;
-	/*margin-bottom: 200px;*/
 	text-transform: uppercase;
 	width: 100%;
 	font-size: 0.8em;
@@ -660,7 +658,6 @@ footer p, .common-nav a, footer img {
 	background: -webkit-linear-gradient(45deg, #5b1cfa 2%,#5b1cfa 10%,#fd7263 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(45deg, #5b1cfa 2%,#5b1cfa 10%,#fd7263 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', endColorstr='#fd7263',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-	/*padding: 2em;*/
 	text-align: center;
 	position: fixed;
 	bottom: 0;
@@ -1757,20 +1754,6 @@ calendar
 #electricity_check {
 	position: relative;
 }
-
-/*#electricity_check:before {
-	position: absolute;
-	content: '';
-	top: 0;
-	left: 0;
-	background: none;
-	width: 26px;
-	height: 26px;
-	border: 1px solid #1d1489;
-	border-radius: 50%;
-}*/
-
-
 
 .elect-details .gas-inner {
 	display: flex;
