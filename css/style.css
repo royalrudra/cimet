@@ -328,10 +328,10 @@ button,
 .cimet-btn:visited {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
-	/*transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 	-webkit-transition:all 0.5s ease-in-out;
 	-ms-transition:all 0.5s ease-in-out;
-	-moz-transition:all 0.5s ease-in-out;*/
+	-moz-transition:all 0.5s ease-in-out;
 	color: #fff;
 	font-size: 1em;
 	text-transform: uppercase;
@@ -366,7 +366,10 @@ button,
 }
 
 .cimet-btn.gradient{
-	background: transparent linear-gradient(125deg, #c2539a, #5b1cfa);
+  background-image: -moz-linear-gradient( -142deg, rgb(253,114,99) 0%, rgb(172,71,175) 37%, rgb(91,28,250) 100%);
+  background-image: -webkit-linear-gradient( -142deg, rgb(253,114,99) 0%, rgb(172,71,175) 37%, rgb(91,28,250) 100%);
+  background-image: -ms-linear-gradient( -142deg, rgb(253,114,99) 0%, rgb(172,71,175) 37%, rgb(91,28,250) 100%);
+  box-shadow: 0px 11px 43px 0px rgba(0, 0, 0, 0.16);
 }
 
 a.btn.btn-small,
@@ -551,7 +554,6 @@ common-banner
 
 .home_banner li p {
 	font-size: 1.25em;
-	/*width: calc(100% - 118px);*/
 	margin-right: 12px;
 	font-family: 'muliextrabold';
 }
@@ -600,7 +602,6 @@ common-banner
 footer {
 	padding: 10px 40px;
 	background-color: #f7f7f9;
-	/*margin-bottom: 200px;*/
 	text-transform: uppercase;
 	width: 100%;
 	font-size: 0.8em;
@@ -657,7 +658,6 @@ footer p, .common-nav a, footer img {
 	background: -webkit-linear-gradient(45deg, #5b1cfa 2%,#5b1cfa 10%,#fd7263 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(45deg, #5b1cfa 2%,#5b1cfa 10%,#fd7263 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', endColorstr='#fd7263',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-	/*padding: 2em;*/
 	text-align: center;
 	position: fixed;
 	bottom: 0;
@@ -1681,22 +1681,6 @@ select#gas-select{
 	position: relative;
 }
 
-#electricity_check:before {
-	position: absolute;
-	content: '';
-	top: 0;
-	left: 0;
-	background: none;
-	width: 26px;
-	height: 26px;
-	border: 1px solid #1d1489;
-	border-radius: 50%;
-}
-
-.form-checkbox #electricity_check:checked:before {
-
-}
-
 .elect-details .gas-inner {
 	display: flex;
 	justify-content: space-around;
@@ -1755,6 +1739,21 @@ select#gas-select{
 
 .loading button {
 	margin-top: 30px;
+}
+
+/* Electricity measure*/
+.electricity-measure .gradient-banner {
+background: -moz-linear-gradient(45deg, #fd7263 0%, #5b1cfa 100%)!important; /* ff3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #fd7263), color-stop(100%, #5b1cfa)); /* safari4+,chrome */
+background: -webkit-linear-gradient(45deg, #fd7263 0%, #5b1cfa 100%)!important; /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(45deg, #fd7263 0%, #5b1cfa 100%)!important; /* opera 11.10+ */
+background: -ms-linear-gradient(45deg, #fd7263 0%, #5b1cfa 100%)!important; /* ie10+ */
+background: linear-gradient(45deg, #fd7263 0%, #5b1cfa 100%)!important; /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', endColorstr='#fd7263',GradientType=1 ); /* ie6-9 */
+}
+
+.electricity-measure .gradient-banner #Layer_1 {
+
 }
 
 .electricity-measure .box-wrapper {
@@ -1838,6 +1837,12 @@ select#gas-select{
 	margin-left: 15px;
 }
 
+.sponsored .electricity-compare ul, .sponsored .gas-compare ul{
+	list-style-image: url(../image/plus-li.png);
+	margin-left: 15px;
+	    filter: brightness(0) invert(1);
+}
+
 .apply-now {
 	min-width: auto;
 	width: 100%;
@@ -1862,6 +1867,10 @@ select#gas-select{
 	visibility:visible;
 }
 
+.sponsored .star + label:before {
+	color: white;
+}
+
 .star:checked + label:after {
 	content: "\2605";	
 	position: absolute;
@@ -1876,33 +1885,56 @@ select#gas-select{
 	z-index: 4;
 }
 
+.sponsored .star:checked + label:before {
+	color: white;
+}
+
 .electricity-measure .box-wrapper .row {
 	position: relative;
-	margin: 0px 50px 30px 50px;
+	margin: 20px 50px;
 }
 
-.electricity-measure .box-wrapper > .row:nth-child(odd)::after {
-	position: absolute;
-	content: '';
-	height: 5px;
-	background: #0a0d7d;
-	width: 100%;
-	padding:0;
-	bottom: -20px;
-	left:0;
-} 
 
-.electricity-measure .box-wrapper > .row:first-child::after {
-	height: 2px;
-	background: #dbd9d9;
+
+.electricity-measure  .row-header {
+	border-bottom: 2px solid #dbd9d9;
+	padding-bottom: 10px;
 }
 
-.sponsored {
+.electricity-measure  .compare-result, .electricity-measure  .sponsored {
+	border-bottom: 5px solid #0a0d7d;
+}
+
+.sponsored .compare-result {
+	border: none;
+}
+
+.electricity-measure  .sponsored .compare-result {
 	background-color: #5b1cfa;
+	margin-top: -20px;
 }
 
-.sponsored h3, .sponsored p, .sponsored h1, .sponsored li, .electricity-compare  .bill-gst h1 {
-	color: white;
+.electricity-measure  .sponsored .row {
+	/*border-bottom: 3px solid white;*/
+	position: relative;
+}
+
+.electricity-measure  .sponsored .row::after {
+	content: '';
+	height: 3px;
+	width: 100%;
+	background-color: white;
+	position: absolute;
+	bottom: -12px;
+	left: 0;
+}
+
+.electricity-measure  .sponsored .row:last-child::after {
+	display: none;
+}
+
+.sponsored h3, .sponsored p, .sponsored h1, .sponsored li, .sponsored .electricity-compare .bill-gst h1 {
+	color: white !important;
 }
 
 .sponsored h3 {
@@ -1916,9 +1948,76 @@ select#gas-select{
 	background: -ms-linear-gradient(45deg, rgba(91,28,250,1) 0%, rgba(253,114,99,1) 100%);
 	background: linear-gradient(45deg, rgba(91,28,250,1) 0%, rgba(253,114,99,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', endColorstr='#fd7263', GradientType=1 );
-	padding: 26px 50px;
+	padding: 26px 70px;
+}
+
+.ad {
+	background: #fd7263; /* Old browsers */
+	background: -moz-linear-gradient(-142deg, #fd7263 0%, #5b1cfa 100%) !important; /* FF3.6-15 */
+	background: -webkit-linear-gradient(-142deg, #fd7263 0%,#5b1cfa 100%) !important; /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(-142deg, #fd7263 0%,#5b1cfa 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd7263', endColorstr='#5b1cfa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	box-shadow: -5px 10px 43px 0px rgba(0, 0, 0, 0.16); 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	height: 130px;
+	margin:50px auto;
+}
+
+.ad h3 {
+	background: none;
+}
+
+.ad button {
+	margin-left: 74px;
+	text-transform: lowercase;
+}
+
+.compare-result:last-child {
+	border-bottom: none;
+}
+
+.common-details-inner-div form input,
+.common-details-inner-div form input:active,
+.common-details-inner-div form input:focus {
+	background-color: #dbd9d9;
+	border: 5px solid white;
+	box-shadow: -1px 2px 43px 0px rgba(0, 0, 0, 0.25);
+	font-family: 'muliextrabold';
+	height: 90px;
+	color: #0a0d80;
+	margin-bottom: 30px;
+	padding: 0 26px;
+}
+
+.table-box form input.col-md-6 {
+	max-width: 48.5%;
+}
+
+.table-box p {
+	    margin: 22px 30px 10px 30px;
+}
+
+.table-box .wrapper-inner-div {
+	padding-top: 30px;
+}
+
+.table-box .box-wrapper-head {
+	color: #0a0d80;
 }
 
 
+.table-box .notice-bottom {
+	margin-top: 0;
+}
 
+.card-number input {
+	width: 100%;
+	text-align: left;
+}
 
+.table-box .Bill {
+	display: none;
+}
