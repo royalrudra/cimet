@@ -26,6 +26,8 @@
     <link rel="stylesheet" type="text/css" href="css/datepicker.min.css">
     <link rel="stylesheet" type="text/css" href="css/selectize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/rudra.css">
+    
 
 </head>
 <!--head end-->
@@ -105,6 +107,11 @@
                                         <label><img src="image/finish.png">Finish</label>
                                         <input  class="cimet-btn grey datepicker" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="movingCollapse" placeholder="DD/MM//YYYY"></input>                                        
                                     </div>
+                                    <!-- <div class="collapse" id="movingCollapse">
+                                        <div id="datepicker" data-date="12/03/2012">
+                                        </div>
+                                        <input type="hidden" id="my_hidden_input">                                        
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -156,7 +163,7 @@
                                         <span>Less than 20,000 kwh / year</span>
                                     </div>
                                     <div class="progress progress-bar-vertical progress-bar-end">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                     </div>
                                 </div>
@@ -182,7 +189,7 @@
 
                                 </div>
                                 <div class="peak_body" id="peak-only">
-                                  <form class="form" role="form">
+                                  <form  role="form">
                                     <div class="form-group row">
                                       <label for="peak-input" class=" col-form-label">Peak</label>
                                       <input class="form-control cimet-btn grey" type="text" placeholder="Your usage" id="peak-input">
@@ -190,12 +197,14 @@
 
                                   </div>
                                   <div class="form-group row form-checkbox">
-                                    <div class="form-check">
-                                      <div class="form-check-label">
-                <input id="electricity_check" type="checkbox"> 
-                <label for="electricity_check"> Do you have a control load two usage?</label>
-            </div>
-                                </div>
+                                        <div class="form-check">
+                                                <label class="check-container"> Do you have a control load two usage?
+                                                        <input type="radio" name="radio">
+                                                        <span class="checkmark"></span>
+                                                      </label>
+                                        
+                                    </div>
+                                   
                             </div>                               
                         </form>
                     </div>
@@ -212,7 +221,7 @@
                     </div>
 
                     <div class="peak_body" id="peak-control">
-                      <form class="form" role="form">
+                      <form  role="form">
                         <div class="form-group row">
                           <label for="peak-input" class=" col-form-label">Peak</label>
                           <input class="form-control cimet-btn grey" type="text" placeholder="Your usage" id="peak-input">
@@ -227,10 +236,11 @@
                     </div>
                     <div class="form-group row form-checkbox">
                         <div class="form-check">
-                          <div class="form-check-label">
-                            <input id="electricity_check" type="checkbox"> 
-                            <label for="electricity_check"> Do you have a control load two usage?</label>
-                        </div>
+                                <label class="check-container"> Do you have a control load two usage?
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                      </label>
+                        
                     </div>
                 </div> 
             </form>
@@ -248,19 +258,17 @@
             </div>
         </div>
         <div class="peak_body" id="usage-time">
-          <form class="form" role="form">
+          <form  role="form">
             <div class="form-group row">
-              <label for="peak2" class=" col-form-label">Peak</label>
-              <input class="form-control cimet-btn grey" type="text" placeholder="Your usage" id="peak2">
+              <label for="peak-input" class=" col-form-label">Peak</label>
+              <input class="form-control cimet-btn grey" type="text" placeholder="Your usage" id="peak-input">
               <P>kWh</P>
           </div>
           <div class="form-group row form-checkbox">
-            <div class="form-check">
-              <div class="form-check-label">
-                <input id="electricity_check" type="checkbox"> 
-                <label for="electricity_check"> Do you have a control load two usage?</label>
-            </div>
-        </div>
+            <label class="check-container"> anything
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+              </label>
     </div>                               
 </form>
 </div>
