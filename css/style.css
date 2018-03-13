@@ -2139,6 +2139,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', end
 
 .identification .card-number input {
 	text-transform: capitalize;
+
 }
 
 .address-code {
@@ -2166,4 +2167,5 @@ h2.address-title {
 
 .distributor form button.form-control {
 	text-transform: capitalize!important;
+
 }
