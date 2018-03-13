@@ -1,0 +1,76 @@
+.message-box{
+    background:white;
+}
+.message-successfull{
+    text-align: center;
+}
+.conformation-no, .choice-header{
+    color: white;
+    background: white;
+    border: 1px solid rgb(209, 206, 206);
+}
+.conformation-no{
+    margin-bottom: 20px;
+}
+.choiceheader-title-electricity{
+    background: blue;
+   
+}
+.choiceheader-title-heading {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.choiceheader-title-gas{
+    background:orange;
+}
+.choice-company-logo{
+    text-align: center;
+    margin: 8px;
+}
+.confiramation-no-heading{
+    background: blue;
+}
+.confiramation-no-heading h3{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.conform-no-section{
+    display: flex;
+    margin: 30px;
+
+}
+.conform-company img{
+    height: 70px;
+}
+.conform-no-details{
+    margin-left: 19%;
+    
+
+}
+.conform-no-details h1{
+    letter-spacing: 6.5px;
+}
+.conform-no-details p{
+    color: #333333;
+}
+.what-next{
+    background:#f9f5f8d4;
+    text-align: center;
+    position: relative;
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    
+}
+.what-next h1{
+    padding: 10px 0px;
+}
+.whats-next-img{
+    position: absolute;
+    top: 15px;
+    right: 68px;
+}
