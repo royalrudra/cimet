@@ -2101,3 +2101,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', end
 	background: none;
 	background-color: #9e40bb;
 }
+
+/*identification*/
+.identity{
+	display: none;
+}
