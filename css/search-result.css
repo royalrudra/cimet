@@ -36,6 +36,8 @@
     display: flex;
     position: relative;
     min-width: 100%;
+    padding-bottom: 35px;
+    height:780px;
 }
 
 .filter-box{
@@ -48,7 +50,9 @@
      overflow-y: hidden; 
     display: inline-block;
     white-space: normal;
-}.scroll-results{
+}
+
+.scroll-results{
    
     overflow-y: hidden;
     white-space: nowrap;
@@ -62,6 +66,21 @@
     top: -131px;
     left: 420px;
     width: 1020px;
+    padding-bottom: 40px;
+}
+
+.scroll-results-down{
+   
+    overflow-y: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* added to add up */
+   height: 775px;
+    width: 100%;
     padding-bottom: 40px;
 }
 
@@ -143,6 +162,30 @@ height: 3px;
 .scroll-results::-webkit-scrollbar-corner       { display: none; height: 0px; width: 0px; }
 
 
+/* scroller design */
+.scroll-results-down::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    }
+    
+    .scroll-results-down::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    }
+    
+    .scroll-results-down::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #4353ff;
+    height: 3px;
+    }
+    
+    .scroll-results::-webkit-scrollbar-corner       { display: none; height: 0px; width: 0px; }
+    
+    
 /* filter- accordion */
 .filter-accordion a{
 text-decoration: none;
@@ -168,7 +211,14 @@ color: inherit;
     background-color: blue;
     color: white;
 }
-
+.panel{
+    padding: 0 18px;
+    color: black;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    text-align: left;
+}
 .panel {
     padding: 0 18px;
     display: none;
