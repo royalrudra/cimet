@@ -42,7 +42,8 @@
         <div class="box-outer">
             <div class="box-wrapper table-box">
                 <div class="box-wrapper-head">
-                    <h2>Do you have a concession?</h2>
+                    <h2>Please be sure to enter your exact details.</h2>
+                    <p>These are required to set-up your<br> account quickly.</p>
                 </div>
                 <div class="common-details-inner-div">
                   <div class="wrapper-inner-div">
@@ -67,15 +68,15 @@
                             <div class="bill-date card-number">                                        
                                 <input class="cimet-btn grey" placeholder="Licence State">                       
                             </div> -->
-                            <label for="gas-select">Licence State</label>
+                            <label for="license-state">Licence State</label>
                             <div class="action-buttons">
                                 <div class="select">
-                                    <select class="select-choices" id="identity-select">
-                                        <option value="">Please Select</option>                                           
-                                        <option value="drivers-license">Drivers License</option>
-                                        <option value="passport">Australian Passport</option>
-                                        <option value="medicare">Medicare Card</option>
-                                        <option value="foreign-passport">Foreign Passport</option>
+                                    <select id="license-state">
+                                        <option value="">choose state</option>                                           
+                                        <option value="State1">State1</option>
+                                        <option value="state2">state2</option>
+                                        <option value="state3">state3</option>
+                                        <option value="state4">state4</option>
                                     </select>
                                 </div>
                             </div>
@@ -100,19 +101,19 @@
                             </div>
                         </div>
                         <div class="col-md-6 medicare identity">
-                            <label>Individual Reference Number (IRN)</label>
+                            <label>Individual Reference Number(IRN)</label>
                             <div class="bill-date card-number">                                        
                                 <input class="cimet-btn grey" placeholder="Individual Reference Number (IRN)">                       
                             </div>
                         </div>
                         <div class="col-md-6 medicare identity">
-                            <label>Middle Name on Card (If Applicable)</label>
+                            <label>Middle Name on Card</label>
                             <div class="bill-date card-number">                                        
                                 <input class="cimet-btn grey" placeholder="Middle Name on Card">                       
                             </div>
                         </div>
                         <div class="col-md-6 medicare identity">
-                            <label>Card Color (G-Green, Y-Yellow, B-Blue)</label>
+                            <label>Card Color</label>
                             <div class="bill-date card-number">                                        
                                 <input class="cimet-btn grey" placeholder="Card Number">                       
                             </div>
@@ -199,6 +200,13 @@
                 $('.' + value + '.identity').show();
 
         }
+
+    });
+
+    $('#license-state').selectize({
+        create: false,
+        persist: false,
+        sortField: 'text'
 
     });
 
