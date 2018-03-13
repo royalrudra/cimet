@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--head start-->
+<head>
+    <!--meta tag start-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="cimet">
+    <meta name="author" content="cimet">
+    <meta name="copyright" content="cimet">
+
+    <!--title-->
+    <title>cimet || Energy saver</title>
+
+    <!-- faveicon start   -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+
+    <!-- stylesheet start -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="css/selectize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<!--head end-->
+<body class="identification">
+    <div class="common-head">
+        <div class="text">
+            <h4>Surb, 2100, NSW <span><img src="image/common-head.png"></span></h4>
+        </div>
+    </div>
+    <div class="common-banner">
+        <div class="marker">
+            <img src="image/marker.png">
+        </div>
+        <div class="box-outer">
+            <div class="box-wrapper table-box">
+                <div class="box-wrapper-head">
+                    <h2>Do you have a concession?</h2>
+                </div>
+                <div class="common-details-inner-div">
+                  <div class="wrapper-inner-div">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="gas-select">Identification type</label>
+                            <div class="action-buttons">
+                                <div class="select">
+                                    <select id="identity-select">
+                                        <option value="">Please Select</option>                                           
+                                        <option value="drivers-license">Drivers License</option>
+                                        <option value="passport">Australian Passport</option>
+                                        <option value="medicare">Medicare Card</option>
+                                        <option value="foreign-passport">Foreign Passport</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 drivers-license identity">
+                           <!--  <label>Licence State</label>
+                            <div class="bill-date card-number">                                        
+                                <input class="cimet-btn grey" placeholder="Licence State">                       
+                            </div> -->
+                            <label for="gas-select">Licence State</label>
+                            <div class="action-buttons">
+                                <div class="select">
+                                    <select class="select-choices" id="identity-select">
+                                        <option value="">Please Select</option>                                           
+                                        <option value="drivers-license">Drivers License</option>
+                                        <option value="passport">Australian Passport</option>
+                                        <option value="medicare">Medicare Card</option>
+                                        <option value="foreign-passport">Foreign Passport</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 drivers-license identity">
+                            <label>Licence Number</label>
+                            <div class="bill-date card-number">                                        
+                                <input class="cimet-btn grey" placeholder="Licence Number">                       
+                            </div>
+                        </div>
+                        <div class="col-md-6 drivers-license identity">
+                            <label>Expiry Date</label>
+                            <div class="bill-date card-number">                                        
+                                <input class="cimet-btn grey" placeholder="Expiry Date">                       
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 medicare identity">
+                            <label>Medicare Card Number</label>
+                            <div class="bill-date card-number">                                        
+                                <input class="cimet-btn grey" placeholder="Medicare Card Number">                       
+                            </div>
+                        </div>
+                        <div class="col-md-6 medicare identity">
+                            <label>Individual Reference Number (IRN)</label>
+                            <div class="bill-date card-number">                                        
+                                <input class="cimet-btn grey" placeholder="Individual Reference Number (IRN)">                       
+                            </div>
+                        </div>
+                        <div class="col-md-6 medicare identity">
+                            <label>Middle Name on Card (If Applicable)</label>
+                            <div class="bill-date card-number">                                        
+                                <input class="cimet-btn grey" placeholder="Middle Name on Card">                       
+                            </div>
+                        </div>
+                        <div class="col-md-6 medicare identity">
+                            <label>Card Color (G-Green, Y-Yellow, B-Blue)</label>
+                            <div class="bill-date card-number">                                        
+                                <input class="cimet-btn grey" placeholder="Card Number">                       
+                            </div>
+                        </div>
+                        <div class="col-md-6 medicare identity">
+                            <label>Expiry Date</label>
+                            <div class="bill-date card-number">                                        
+                                <input class="cimet-btn grey" placeholder="Expiry Date">                       
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 passport identity">
+                            <label>Passport Number</label>
+                            <div class="bill-date card-number">                                        
+                                <input class="cimet-btn grey" placeholder="Passport Number">                       
+                            </div>
+                        </div>
+                        <div class="col-md-6 passport identity">
+                            <label>Expiry Date</label>
+                            <div class="bill-date card-number">                                        
+                                <input class="cimet-btn grey" placeholder="Expiry Date">                       
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 foreign-passport identity">
+                            <label>Passport Number</label>
+                            <div class="bill-date card-number">                                        
+                                <input class="cimet-btn grey" placeholder="Passport Number">                       
+                            </div>
+                        </div>
+                        <div class="col-md-6 foreign-passport identity">
+                            <label>Expiry Date</label>
+                            <div class="bill-date card-number">                                        
+                                <input class="cimet-btn grey" placeholder="Expiry Date">                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+
+
+
+            <!-- </div> -->
+            <div class="notice-bottom">
+                <div class="note">
+                    <img src="image/note.png">
+                    <p>We need to know these details to ensure we get you the best price for your business of home.</p>
+                </div>
+                <div class="action-buttons">
+                    <button class="cimet-btn grey previous" onclick="location.href='electricity-details.html';">Previous</button>
+                    <button class="cimet-btn" onclick="location.href='electricity-measure.html';">next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class= "bottom_footer hidden-sm-down inner-footer">
+  <p><img src="image/security.png">Your security guaranteed</p>
+  <nav class="common-nav">
+    <a class="nav-link" href="#">ABOUT US</a>
+    <a class="nav-link" href="#">TERMS & CONDITIONS</a>
+</nav>
+<p class="copy_right">
+    © 2017 BulkTTTbargains. ABN 81 609 882 804 Australian Credit License Number 483595
+</p>
+</footer>
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/datepicker.min.js"></script>
+<script src="js/selectize.min.js"></script>
+<script>
+    $('#identity-select').selectize({
+        create: false,
+        persist: false,
+        sortField: 'text',
+        onChange: function(value) {
+            console.log(value);
+
+                $('.identity').hide();
+                $('.' + value + '.identity').show();
+
+        }
+
+    });
+
+</script>
+
+</body>
+</html>
