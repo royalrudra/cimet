@@ -328,6 +328,10 @@ button,
 .cimet-btn:visited {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+	-ms-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
 	color: #fff;
 	font-size: 1em;
 	text-transform: uppercase;
@@ -786,6 +790,7 @@ footer p, .common-nav a, footer img {
 
 #propertyCollapse .card-body button.close img {
 	margin: 0;
+	filter:invert(1) brightness(10)
 }
 
 
@@ -961,11 +966,12 @@ gas-details
 
 .select .selectize-control .selectize-input {
 	background-color: #dbd9d9;
-
 }
 
-.select .selectize-control.single .selectize-input #gas-select-selectized,
-.select .selectize-control.single .selectize-input #gas-select-selectized::placeholder,
+
+/*.select .selectize-control.single .selectize-input #gas-select-selectized,
+.select .selectize-control.single .selectize-input #gas-select-selectized::placeholder,*/
+.select .selectize-control .selectize-input input::placeholder,
 .select .selectize-control .selectize-input {
 	/*height: 90px;*/
 	line-height: 80px;
@@ -976,7 +982,10 @@ gas-details
 	font-size: 20px;
 	color: #0a0d80;
 	text-align: left;
-	padding-left: 12px;
+}
+
+.select .selectize-control .selectize-input input {
+	width: auto!important;
 }
 
 .selectize-control.single .selectize-input:after {
@@ -994,7 +1003,8 @@ gas-details
 	width: 100% !important;
 } */
 
-select#gas-select{
+select#gas-select,
+select.identity-select {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	-ms-appearance: none;
@@ -2100,40 +2110,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', end
 }
 
 /*identification*/
-.identity{
+.identification label {
+	font-size: 1.4rem;
+	color: #0a0d80;
+	font-family: 'muliextrabold';
+	margin: 36px 30px;
+}
+
+.identity {
 	display: none;
 }
 
-
-/*address detail css*/
-
-.address-detail .box-wrapper .wrapper-inner-div {
-	border-top:none;
+.identification .selectize-input, 
+.identification .selectize-control.single .selectize-input.input-active {
+	border: 10px solid white !important;
+    box-shadow: -1px 2px 43px 0px rgba(0, 0, 0, 0.25);
 }
-.address-code {
-	position: relative;
-	padding-left: 54px;
-	border-bottom: 5px solid #0a0d80;
-	margin-bottom: 15px;
-}
-
-.address-code img {
-	position: absolute;
-	top: 50%;
-	left: 0;
-	transform: translateY(-50%);
-}
-
-.address-code input {
-	border: none!important;
-	background: none!important;
-	box-shadow: none!important;
-	margin-bottom: 0!important;
-}
-
-.wrapper-inner-div h2.address-title {
-	margin-bottom: 40px;
-	margin-top: 40px;
-}
-
-

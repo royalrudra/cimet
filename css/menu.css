@@ -8,11 +8,17 @@
     border-bottom: 4px solid #dbd9d9;
 }
 .menu{
-    height: 50px;
+    height: auto;
     position: relative;
     z-index: 111;
-    
+    background-color: #0a0d7f;
+    width: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
 }
+
 
 .header-box{
     display: flex;
@@ -40,13 +46,13 @@
     display: block;
 }
 .nav-box-bg {
-    background: blue;
+    background: #0a0d80;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 .nav-box-content {
     color: white;
@@ -64,11 +70,20 @@ body.open-nav {
 
 .menu-close{
     text-align: center;
+    height: 78px;
+    width: 78px;
+    border-radius: 50%;
+    background-color: white;
+        margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* filter */
 
 .filter-details{
     display: none;
+    margin-top: 15px;
    
     overflow: hidden;
 }
@@ -80,7 +95,7 @@ body.open-nav {
 }
 .filter-results h1{
  color: white;
- font-size: 24px;
+ font-size: 1.8rem;
 
 }
 .filter-results p{
@@ -94,20 +109,38 @@ body.open-nav {
 }
 .filterby h1{
     color: white;
-    font-size: 24px;
+    font-size: 1.8rem;
+    font-family: 'muliregular';
+    font-weight: normal;
    
    }
+
    .hr-color{
        background: white;
    }
 
+   .filterby.accordion {
+    position: relative;
+   }
+
+   .filterby.accordion:after {
+    position: absolute;
+    top: 50%;
+    right:0;
+    background: url(../image/chevron.png) no-repeat center center;
+    height: 26px;
+    width: 48px;
+    content: '';
+        filter: brightness(0) invert(1);
+        transform: translateY(-50%);
+   }
 
 
    /* filter-catg */
    .container-round {
     display: block;
     position: relative;
-    padding-left: 35px;
+    padding-left: 44px;
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
@@ -144,7 +177,7 @@ body.open-nav {
 
 /* When the radio button is checked, add a blue background */
 .container-round input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #fb9734;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
