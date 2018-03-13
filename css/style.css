@@ -607,6 +607,7 @@ footer {
 	font-size: 0.8em;
 	display: flex;
 	align-items: center;
+	
 }
 
 footer p, .full-nav h4, .common-nav, .full-nav li  {
@@ -790,6 +791,7 @@ footer p, .common-nav a, footer img {
 
 #propertyCollapse .card-body button.close img {
 	margin: 0;
+	filter:invert(1) brightness(10)
 }
 
 
@@ -965,11 +967,12 @@ gas-details
 
 .select .selectize-control .selectize-input {
 	background-color: #dbd9d9;
-
 }
 
-.select .selectize-control.single .selectize-input #gas-select-selectized,
-.select .selectize-control.single .selectize-input #gas-select-selectized::placeholder,
+
+/*.select .selectize-control.single .selectize-input #gas-select-selectized,
+.select .selectize-control.single .selectize-input #gas-select-selectized::placeholder,*/
+.select .selectize-control .selectize-input input::placeholder,
 .select .selectize-control .selectize-input {
 	/*height: 90px;*/
 	line-height: 80px;
@@ -980,6 +983,10 @@ gas-details
 	font-size: 20px;
 	color: #0a0d80;
 	text-align: left;
+}
+
+.select .selectize-control .selectize-input input {
+	width: 177px!important;
 }
 
 .selectize-control.single .selectize-input:after {
@@ -997,7 +1004,8 @@ gas-details
 	width: 100% !important;
 } */
 
-select#gas-select{
+select#gas-select,
+select.identity-select {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	-ms-appearance: none;
@@ -2053,10 +2061,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', end
 .datepicker-days td {	
 	font-family: 'muliextrabold';
 	font-size: 1.7rem;
+	text-align: center;
 }
 
 .datepicker-days th {	
 	font-family: 'muliregular';
+	text-align: center;
 }
 
 .datepicker-days thead tr:nth-child(3) {
@@ -2100,4 +2110,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', end
 .datepicker table tr td span.active:hover, .datepicker table tr td span.active:hover:hover, .datepicker table tr td span.active.disabled:hover, .datepicker table tr td span.active.disabled:hover:hover, .datepicker table tr td span.active:active, .datepicker table tr td span.active:hover:active, .datepicker table tr td span.active.disabled:active, .datepicker table tr td span.active.disabled:hover:active, .datepicker table tr td span.active.active, .datepicker table tr td span.active:hover.active, .datepicker table tr td span.active.disabled.active, .datepicker table tr td span.active.disabled:hover.active, .datepicker table tr td span.active.disabled, .datepicker table tr td span.active:hover.disabled, .datepicker table tr td span.active.disabled.disabled, .datepicker table tr td span.active.disabled:hover.disabled, .datepicker table tr td span.active[disabled], .datepicker table tr td span.active:hover[disabled], .datepicker table tr td span.active.disabled[disabled], .datepicker table tr td span.active.disabled:hover[disabled] {
 	background: none;
 	background-color: #9e40bb;
+}
+
+/*identification*/
+.identification label {
+	font-size: 1.4rem;
+	color: #0a0d80;
+	font-family: 'muliextrabold';
+	margin: 36px 30px 24px 30px;
+}
+
+.identity {
+	display: none;
+}
+
+.identification .selectize-input, 
+.identification .selectize-control.single .selectize-input.input-active {
+	border: 10px solid white !important;
+    box-shadow: -1px 2px 43px 0px rgba(0, 0, 0, 0.25);
+}
+
+.identification .common-details-inner-div .wrapper-inner-div:last-child {
+	border-bottom: none;
+	margin-bottom: 30px;
+}
+
+.identification .card-number input {
+	text-transform: capitalize;
 }
