@@ -328,10 +328,6 @@ button,
 .cimet-btn:visited {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
-	transition: all 0.3s ease-in-out;
-	-webkit-transition:all 0.5s ease-in-out;
-	-ms-transition:all 0.5s ease-in-out;
-	-moz-transition:all 0.5s ease-in-out;
 	color: #fff;
 	font-size: 1em;
 	text-transform: uppercase;
@@ -981,6 +977,7 @@ gas-details
 	font-size: 20px;
 	color: #0a0d80;
 	text-align: left;
+	padding-left: 12px;
 }
 
 .selectize-control.single .selectize-input:after {
@@ -2102,3 +2099,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', end
 	background: none;
 	background-color: #9e40bb;
 }
+
+/*identification*/
+.identity{
+	display: none;
+}
+
+
+/*address detail css*/
+
+.address-detail .box-wrapper .wrapper-inner-div {
+	border-top:none;
+}
+.address-code {
+	position: relative;
+	padding-left: 54px;
+	border-bottom: 5px solid #0a0d80;
+	margin-bottom: 15px;
+}
+
+.address-code img {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.address-code input {
+	border: none!important;
+	background: none!important;
+	box-shadow: none!important;
+	margin-bottom: 0!important;
+}
+
+.wrapper-inner-div h2.address-title {
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+
