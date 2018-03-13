@@ -986,7 +986,7 @@ gas-details
 }
 
 .select .selectize-control .selectize-input input {
-	width: auto!important;
+	width: 177px!important;
 }
 
 .selectize-control.single .selectize-input:after {
@@ -2061,10 +2061,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', end
 .datepicker-days td {	
 	font-family: 'muliextrabold';
 	font-size: 1.7rem;
+	text-align: center;
 }
 
 .datepicker-days th {	
 	font-family: 'muliregular';
+	text-align: center;
 }
 
 .datepicker-days thead tr:nth-child(3) {
@@ -2115,7 +2117,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', end
 	font-size: 1.4rem;
 	color: #0a0d80;
 	font-family: 'muliextrabold';
-	margin: 36px 30px;
+	margin: 36px 30px 24px 30px;
 }
 
 .identity {
@@ -2126,4 +2128,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', end
 .identification .selectize-control.single .selectize-input.input-active {
 	border: 10px solid white !important;
     box-shadow: -1px 2px 43px 0px rgba(0, 0, 0, 0.25);
+}
+
+.identification .common-details-inner-div .wrapper-inner-div:last-child {
+	border-bottom: none;
+	margin-bottom: 30px;
+}
+
+.identification .card-number input {
+	text-transform: capitalize;
 }
