@@ -2099,6 +2099,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', end
 	background-color: #9e40bb;
 }
 
+/*identification*/
+.identity{
+	display: none;
+}
+
 
 /*address detail css*/
 
@@ -2130,4 +2135,5 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', end
 	margin-bottom: 40px;
 	margin-top: 40px;
 }
+
 
