@@ -1,4 +1,4 @@
-.compare-result-header{
+.compare-result-header, .choice-type-details-header, .return-home{
   background-image: -moz-linear-gradient( -142deg, rgb(253,114,99) 0%, rgb(172,71,175) 37%, rgb(91,28,250) 100%);
   background-image: -webkit-linear-gradient( -142deg, rgb(253,114,99) 0%, rgb(172,71,175) 37%, rgb(91,28,250) 100%);
   background-image: -ms-linear-gradient( -142deg, rgb(253,114,99) 0%, rgb(172,71,175) 37%, rgb(91,28,250) 100%);
