@@ -2174,3 +2174,14 @@ h2.address-title {
 	text-transform: capitalize!important;
 
 }
+
+.icon-circle {
+    height: 88px;
+    width: 88px;
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-right: 20px;
+}
