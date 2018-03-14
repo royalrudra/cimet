@@ -2178,7 +2178,7 @@ h2.address-title {
 .icon-circle {
     height: 88px;
     width: 88px;
-    background: red;
+    background: #0a0d80;
     border-radius: 50%;
     display: flex;
     justify-content: center;
