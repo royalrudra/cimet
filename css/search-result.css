@@ -2,21 +2,36 @@
   background-image: -moz-linear-gradient( -142deg, rgb(253,114,99) 0%, rgb(172,71,175) 37%, rgb(91,28,250) 100%);
   background-image: -webkit-linear-gradient( -142deg, rgb(253,114,99) 0%, rgb(172,71,175) 37%, rgb(91,28,250) 100%);
   background-image: -ms-linear-gradient( -142deg, rgb(253,114,99) 0%, rgb(172,71,175) 37%, rgb(91,28,250) 100%);
-    justify-content: space-between;
-    display: flex;
-    margin-top: 10px;
-    padding: 9px 20px;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 70px;
+  padding: 0 20px;
+  height: 58px;
+  align-items: center;
 }
+
+.compare-result-header, .filter-tag p {
+    font-family: 'muliextrabold';
+    font-size: 24px;
+}
+
+.filter-tag p {
+    color: #0a0d80;
+    text-align: left !important;
+    max-width: 230px;
+}
+
 .compare-result-header i{
     padding-top: 3px;
 }
 
-.compare-result-btn{
+.compare-result-btn {
     display: flex;
     justify-content: space-around;
-    margin-top: 40px;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
-.compare-result-btn i{
+.compare-result-btn i {
     margin-left: 9px;
     padding-top: 3px;
 }
@@ -44,18 +59,20 @@
 
 .filter-box{
     background:white;
-    border: 1px solid #333;
+    border: 2px solid #dbd9d9;
     margin: 20px;
-    width: 260px;
+    width: 400px;
     height: 100%;
-     overflow-x: scroll; 
-     overflow-y: hidden; 
+    overflow-x: scroll; 
+    overflow-y: hidden; 
     display: inline-block;
     white-space: normal;
+    border-radius: 10px;
+    padding-bottom: 60px;
 }
 
 .scroll-results{
-   
+
     overflow-y: hidden;
     white-space: nowrap;
     box-sizing: border-box;
@@ -63,15 +80,18 @@
     -ms-box-sizing: border-box;
     margin: 0;
     padding: 0;
-    position: relative;
-    top: -132px;
-    left: 180px;
-    /* width: 1020px; */
+
+    /* added to add up */
+    position: absolute;
+    top: -150px;
+    left: 420px;
+    width: 1020px;
+
     padding-bottom: 40px;
 }
 
 .scroll-results-down{
-   
+
     overflow-y: hidden;
     white-space: nowrap;
     box-sizing: border-box;
@@ -80,55 +100,85 @@
     margin: 0;
     padding: 0;
     /* added to add up */
-   height: 775px;
+    height: 775px;
     width: 100%;
     padding-bottom: 40px;
 }
 
 .plan-options, .plan-details{
-    display: inline-flex;
+    /*display: inline-flex;*/
 }
+
+.plan-details {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo-details{
     display: inline-block;
-    margin-left: 15px;
-    margin-top: 15px;
+    margin-left: 30px;
+    font-size: 20px;
 }
+
 .logo-details > h1{
-   font-size: 17px;
+ font-size: 20px;
+ margin-top: 15px;
 }
-.plan-list > h1{
-    font-size: 17px;
+
+.plan-list > h1, .tailored-details h1 {
+    font-size: 26px;
+    margin-bottom: 30px;
 }
+
 .plan-list{
     width: 300px;
     display: flex;
     flex-direction: column;
     margin: 83px 1px 10px 55px;
+        color: #0a0d80;
+    font-size: 20px;
 }
+
+
 .tailored-details{
-    margin-top: 30px;
+    margin-top: 60px;
 }
-.tailored-details h1{
-    font-size: 30px;
+.tailored-details button {
+    margin: 40px auto;
+    font-size: 0.8em;
+    display: block;
 }
+
 .top-filter-header{
-    background: orange;
+    background: #fb9734;
     color:white;
 }
 .bottom-filter-header{
-    background: midnightblue;
+    background: #0a0d80;
     color: white;
 }
-.filter p{
+
+.filter p {
     text-align: center;
     font-size: 14px;
     text-transform: uppercase;
+    padding: 6px;
 }
 
-.filter > .brand-logo{
+.filter > .brand-logo {
     display:flex;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
+.filter > .brand-logo img {
+    border: 1px solid #f6f6f6;
+        width: calc(100% - 60px);
+    padding: 10px;
+}
+
 
 
 .brand-logo > i{
@@ -138,26 +188,29 @@
     color: orange;
 }
 
+.filter-accordion ul li {
+    color: #0a0d80;
+}
 
 /* scroller design */
 .scroll-results::-webkit-scrollbar {
-width: 10px;
-height: 10px;
--webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0); 
--webkit-border-radius: 10px;
-border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
 }
 
 .scroll-results::-webkit-scrollbar-track {
--webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0); 
--webkit-border-radius: 10px;
-border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
 }
 
 .scroll-results::-webkit-scrollbar-thumb {
-border-radius: 10px;
-background: #4353ff;
-height: 3px;
+    border-radius: 10px;
+    background: #4353ff;
+    height: 3px;
 }
 
 .scroll-results::-webkit-scrollbar-corner       { display: none; height: 0px; width: 0px; }
@@ -170,35 +223,56 @@ height: 3px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0); 
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    }
-    
-    .scroll-results-down::-webkit-scrollbar-track {
+}
+
+.scroll-results-down::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0); 
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    }
-    
-    .scroll-results-down::-webkit-scrollbar-thumb {
+}
+
+.scroll-results-down::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background: #4353ff;
     height: 3px;
-    }
-    
-    .scroll-results::-webkit-scrollbar-corner       { display: none; height: 0px; width: 0px; }
-    
-    
+}
+
+.scroll-results::-webkit-scrollbar-corner       { display: none; height: 0px; width: 0px; }
+
+
 /* filter- accordion */
 .filter-accordion a{
-text-decoration: none;
-color: inherit;
-      
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.compare-result .accordion, .compare-result .brand-logo, .compare-result .filter-tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.compare-result .filter-tag {
+    justify-content: space-around;
+    margin: 30px auto;
+}
+
+.compare-result .filter-tag .note {
+    margin: 0;
+    width: 18px; 
+    align-self: flex-start;
+}
+
+.compare-result .filter-tag .note img {
+    margin:0;
 }
 
 .accordion {
-    background-color:orange;
-    color: #444;
+    background-color:#fb9734;
+    color: #0a0d80;
     cursor: pointer;
-    padding: 18px;
+    padding: 0 30px;
     width: 100%;
     border: none;
     text-align: left;
@@ -206,10 +280,11 @@ color: inherit;
     font-size: 15px;
     transition: 0.4s;
     border-radius: 0px;
+    height: 58px;
 }
 
 .active, .accordion:hover {
-    background-color: blue;
+    background-color: #0a0d80;
     color: white;
 }
 .panel{
@@ -221,7 +296,7 @@ color: inherit;
     text-align: left;
 }
 .panel {
-    padding: 0 18px;
+    padding: 40px 30px;
     display: none;
     background-color: white;
     overflow: hidden;
@@ -229,24 +304,27 @@ color: inherit;
 
 button.accordion:after {
     content: '\002B';
-    color: white;
+    color: #0a0d80;
     font-weight: bold;
     float: right;
     margin-left: 5px;
+    font-size: 40px;
 }
+
 button.accordion.active:after {
     content: "\2212";
+    color: white;
 }
+
 .according-btn{
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 90px 20px 20px 20px;
+   width: calc(100% - 40px);
 }
 
 .show{
     display: block;
 }
-  .accordion li a.toggle {
+.accordion li a.toggle {
     width: 100%;
     display: block;
     background: rgba(0, 0, 0, 0.78);
@@ -254,11 +332,11 @@ button.accordion.active:after {
     padding: .75em;
     border-radius: 0.15em;
     transition: background .3s ease;
-  }
-  .accordion li a.toggle:hover {
+}
+.accordion li a.toggle:hover {
     background: rgba(0, 0, 0, 0.9);
-  }
-  .option-heading{background:#ddd; cursor:pointer;}
+}
+.option-heading{background:#ddd; cursor:pointer;}
 .option-content{background:#eee;}
 
 /* Notice this class ! */
@@ -266,12 +344,24 @@ button.accordion.active:after {
 
 .according-btn-details{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: calc(100% - 40px);
+        margin: 0 auto;
 }
-.according-btn-details .compare-btn{
-    padding: 10px 20px;
+.according-btn-details button {
+    height: 50px;
     min-width: 50px;
-    font-size: 8px;
+    font-size: 0.8em;
+    width: calc(50% - 8px);
+    padding: 3px;
+}
+
+.view-btn {
+    background-color: #0a0d80;
+}
+
+.remove-btn {
+    background-color: #fd7263;
 }
 
 
@@ -301,14 +391,14 @@ button.accordion.active:after {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-  
-  .panel-default>.panel-heading a {
+}
+
+.panel-default>.panel-heading a {
     display: block;
     padding: 10px 15px;
-  }
-  
-  .panel-default>.panel-heading a:after {
+}
+
+.panel-default>.panel-heading a:after {
     content: "";
     position: relative;
     top: 1px;
@@ -322,49 +412,49 @@ button.accordion.active:after {
     float: right;
     transition: transform .25s linear;
     -webkit-transition: -webkit-transform .25s linear;
-  }
-  
-  .panel-default>.panel-heading a[aria-expanded="true"] {
+}
+
+.panel-default>.panel-heading a[aria-expanded="true"] {
     background-color: #eee;
-  }
-  
-  .panel-default>.panel-heading a[aria-expanded="true"]:after {
+}
+
+.panel-default>.panel-heading a[aria-expanded="true"]:after {
     content: "\2212";
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
-  }
-  
-  .panel-default>.panel-heading a[aria-expanded="false"]:after {
+}
+
+.panel-default>.panel-heading a[aria-expanded="false"]:after {
     content: "\002b";
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
-  }
-  
-  .accordion-option {
+}
+
+.accordion-option {
     width: 100%;
     float: left;
     clear: both;
     margin: 15px 0;
-  }
-  
-  .accordion-option .title {
+}
+
+.accordion-option .title {
     font-size: 20px;
     font-weight: bold;
     float: left;
     padding: 0;
     margin: 0;
-  }
-  
-  .accordion-option .toggle-accordion {
+}
+
+.accordion-option .toggle-accordion {
     float: right;
     font-size: 16px;
     color: #6a6c6f;
-  }
-  
-  .accordion-option .toggle-accordion:before {
+}
+
+.accordion-option .toggle-accordion:before {
     content: "Expand All";
-  }
-  
-  .accordion-option .toggle-accordion.active:before {
+}
+
+.accordion-option .toggle-accordion.active:before {
     content: "Collapse All";
-  }
+}
