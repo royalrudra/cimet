@@ -13,6 +13,11 @@
     margin: auto;
     width: 51%;
     margin-top: 20px;
+    align-items: center;
+}
+.menu-list h1 {
+        font-size: 2.8em;
+    color: white;
 }
 .menu-item-logo{
     margin-right: 10%;

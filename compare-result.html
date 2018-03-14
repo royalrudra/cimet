@@ -474,44 +474,34 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script>
 
-
-    $(() => {
-        $(".accordion").click(function() {
-            reset(this) && $(this).addClass("active") && $(this).next().toggle();
-        })
-
-        const reset = self => {
-            let all = selector => $(self).parent().find(selector);
-            all(".accordion").removeClass("active") && all(".panel").hide();
-        } 
-
 $(() => {
     $(".accordion").click(function() {
         reset(this) 
          $(this).addClass("active") ;
           $(this).next().toggle();
-
     })
+    
+    const reset = self => {
+        let all = selector => $(self).parent().find(selector);
+        all(".accordion").removeClass("active") && all(".panel").hide();
+    } 
+})
 
-    jQuery(function($) {
+jQuery(function($) {
 
-        $(".option-heading").click(function() {
-          $(this).next(".option-content").stop().slideToggle(350);
-          $(this).find(".arrow-up, .arrow-down").toggle();
-      });
+$(".option-heading").click(function() {
+  $(this).next(".option-content").stop().slideToggle(350);
+  $(this).find(".arrow-up, .arrow-down").toggle();
+});
 
-    });
+});
 
-    jQuery(function($) {
+jQuery(function($) {
 
-        $(".option-heading").click(function() {
-          $(this).toggleClass('show');
-
-      });
-
-
-    });
-
+$(".option-heading").click(function() {
+  $(this).toggleClass('show');
+  
+});
 
 </script>
 
