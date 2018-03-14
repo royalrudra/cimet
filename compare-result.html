@@ -461,7 +461,9 @@
 
 $(() => {
     $(".accordion").click(function() {
-        reset(this) && $(this).addClass("active") && $(this).next().toggle();
+        reset(this) ;
+         $(this).addClass("active") ;
+          $(this).next().toggle();
     })
     
     const reset = self => {

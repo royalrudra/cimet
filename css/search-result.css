@@ -63,11 +63,10 @@
     -ms-box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* added to add up */
-    position: absolute;
-    top: -131px;
-    left: 420px;
-    width: 1020px;
+    position: relative;
+    top: -132px;
+    left: 180px;
+    /* width: 1020px; */
     padding-bottom: 40px;
 }
 
