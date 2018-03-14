@@ -1840,7 +1840,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', end
 	margin-top: 15px;
 }
 
-.electricity-compare ul, .gas-compare ul{
+.electricity-compare ul, .gas-compare ul, .filter-accordion ul {
 	list-style-image: url(../image/plus-li.png);
 	margin-left: 15px;
 }
