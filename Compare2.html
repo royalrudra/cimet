@@ -807,20 +807,19 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script>
 
-    var acc = document.getElementsByClassName("accordion");
-var i;
+$(() => {
+    $(".accordion").click(function() {
+        reset(this) ;
+         $(this).addClass("active") ;
+          $(this).next().toggle();
+    })
+    
+    const reset = self => {
+        let all = selector => $(self).parent().find(selector);
+        all(".accordion").removeClass("active") && all(".panel").hide();
+    } 
+})
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    });
-}
 jQuery(function($) {
 
 $(".option-heading").click(function() {
@@ -841,31 +840,6 @@ $(".option-heading").click(function() {
 });
 
 
-$(document).ready(function() {
-
-$(".toggle-accordion").on("click", function() {
-  var accordionId = $(this).attr("accordion-id"),
-    numPanelOpen = $(accordionId + ' .collapse.in').length;
-  
-  $(this).toggleClass("active");
-
-  if (numPanelOpen == 0) {
-    openAllPanels(accordionId);
-  } else {
-    closeAllPanels(accordionId);
-  }
-})
-
-openAllPanels = function(aId) {
-  console.log("setAllPanelOpen");
-  $(aId + ' .panel-collapse:not(".in")').collapse('show');
-}
-closeAllPanels = function(aId) {
-  console.log("setAllPanelclose");
-  $(aId + ' .panel-collapse.in').collapse('hide');
-}
-   
-});
 
 </script>
 

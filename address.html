@@ -27,6 +27,43 @@
   <link rel="stylesheet" type="text/css" href="css/selectize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
+<style>
+#manual-check {
+  display: block;
+  height: 53px;
+  margin: 0 0 -53px -9999px;
+  order: 4;
+  outline: none;
+  counter-increment: undone-items;
+}
+.manual-check label {
+  display: block;
+  position: relative;
+  padding: 15px 0 15px 55px;
+  border-top: 1px dashed #fff;
+  order: 4;
+  cursor: pointer;
+  
+}
+
+.manual-check label::before {
+  content: url("./image/checkbox.png"); /* circle outline */
+  display: block;
+  position: absolute;
+  color: orange;
+  top: 11px;
+  left: 10px;
+  font: 1.5em 'FontAwesome';
+}
+
+
+
+.manual-check input:checked + label::before {
+  content: url("./image/checkbox-tick.png"); /* circle checkmark */
+  
+}
+</style>
+
 </head>
 <!--head end-->
 <body class="address-detail">
@@ -54,10 +91,15 @@
                   <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
                 </div>
                 <div class="row form-checkbox">
-                  <div class="form-check">
-                    <label class="check-container"> Enter manually
+                  <div class="form-check manual-check">
+                    <!-- <label class="check-container"> Enter manually
                       <input type="radio" name="radio">
                       <span class="checkmark"></span>
+                    </label> -->
+
+                    <input type="checkbox" id="manual-check">
+                    <label for="manual-check">
+                      Enter manually
                     </label>
 
                   </div>

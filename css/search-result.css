@@ -80,11 +80,13 @@
     -ms-box-sizing: border-box;
     margin: 0;
     padding: 0;
+
     /* added to add up */
     position: absolute;
     top: -150px;
     left: 420px;
     width: 1020px;
+
     padding-bottom: 40px;
 }
 

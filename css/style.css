@@ -1499,6 +1499,7 @@ select.identity-select {
 /*nav design*/
 
 .full-nav {
+	z-index: 1000;
 	width: 100%;
 	border-top: 2px solid #dbd9d9;
 	border-bottom: 2px solid #dbd9d9;

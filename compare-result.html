@@ -474,6 +474,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script>
 
+
     $(() => {
         $(".accordion").click(function() {
             reset(this) && $(this).addClass("active") && $(this).next().toggle();
@@ -483,6 +484,13 @@
             let all = selector => $(self).parent().find(selector);
             all(".accordion").removeClass("active") && all(".panel").hide();
         } 
+
+$(() => {
+    $(".accordion").click(function() {
+        reset(this) 
+         $(this).addClass("active") ;
+          $(this).next().toggle();
+
     })
 
     jQuery(function($) {
