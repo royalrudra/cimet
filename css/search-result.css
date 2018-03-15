@@ -80,13 +80,11 @@
     -ms-box-sizing: border-box;
     margin: 0;
     padding: 0;
-
-    /* added to add up */
-    position: absolute;
-    top: -150px;
-    left: 420px;
-    width: 1020px;
-
+    position: relative;
+    top: -158px;
+    left: 70px;
+    width: calc(100% - 418px);
+    height: 1180px;
     padding-bottom: 40px;
 }
 
@@ -457,4 +455,8 @@ button.accordion.active:after {
 
 .accordion-option .toggle-accordion.active:before {
     content: "Collapse All";
+}
+.super-top-header{
+    color: white;
+    background: -moz-linear-gradient(-142deg, #fd7263 0%, #5b1cfa 100%) !important; background: -webkit-linear-gradient(-142deg, #fd7263 0%,#5b1cfa 100%) !important; background: linear-gradient(-142deg, #fd7263 0%,#5b1cfa 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd7263', endColorstr='#5b1cfa',GradientType=1 ); background: #fd7263; background: -moz-linear-gradient(-142deg, #fd7263 0%, #5b1cfa 100%) !important; background: -webkit-linear-gradient(-142deg, #fd7263 0%,#5b1cfa 100%) !important; background: linear-gradient(-142deg, #fd7263 0%,#5b1cfa 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd7263', endColorstr='#5b1cfa',GradientType=1 );
 }
