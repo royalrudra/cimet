@@ -57,8 +57,8 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="action-buttons circle">
-                                    <button class="cimet-btn previous" data-toggle="collapse" id= "No-bill-close" href="#Bill" role="button" aria-expanded="false" aria-controls="billCollapse">Yes</button>
-                                    <button class="cimet-btn grey" data-toggle="collapse" id="bill-close" href="#noBill" role="button" aria-expanded="false" aria-controls="noBillCollapse">No</button>
+                                    <button class="cimet-btn " data-toggle="collapse" id= "No-bill-close" href="#Bill" role="button" aria-expanded="false" aria-controls="billCollapse">Yes</button>
+                                    <button class="cimet-btn " data-toggle="collapse" id="bill-close" href="#noBill" role="button" aria-expanded="false" aria-controls="noBillCollapse">No</button>
                                 </div>
                             </div>
                         </div>
@@ -361,6 +361,15 @@
 */
 
 $('.selectize-input > input').prop('disabled', 'disabled');
+
+$('.action-buttons.circle button').click(function(){
+
+$(this).parent().find('button').removeClass('active').addClass('noactive');
+$(this).addClass('active');
+
+
+
+});
 </script>
 
 </body>
