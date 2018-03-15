@@ -54,7 +54,7 @@
     position: relative;
     min-width: 100%;
     padding-bottom: 35px;
-    height:780px;
+    
 }
 
 .filter-box{
@@ -68,6 +68,7 @@
     display: inline-block;
     white-space: normal;
     border-radius: 10px;
+    height: auto;;
     padding-bottom: 60px;
 }
 
@@ -524,6 +525,7 @@ button.accordion.active:after {
 
 .scroll-result-three .filter-box {
     width: 460px;
+    float: left;
 }
 
 .scroll-result-three .single-rate-content table {
