@@ -530,7 +530,7 @@ common-banner
 	mix-blend-mode:soft-light;
 }
 
-.home_banner p {
+.home_banner p{
 	font-size: 1.5em;
 	margin-top: 12px;
 }
@@ -1570,7 +1570,7 @@ select.identity-select {
 
 .full-nav .menu-wrapper button.grey:first-child {
 	margin-right: 8px;
-	padding: 8px 30px;
+	/*padding: 8px 30px;*/
 }
 
 
@@ -2173,4 +2173,15 @@ h2.address-title {
 .distributor form button.form-control {
 	text-transform: capitalize!important;
 
+}
+
+.icon-circle {
+    height: 88px;
+    width: 88px;
+    background: #0a0d80;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-right: 20px;
 }
