@@ -366,10 +366,10 @@ button,
 }
 
 .cimet-btn.gradient{
-  background-image: -moz-linear-gradient( -142deg, rgb(253,114,99) 0%, rgb(172,71,175) 37%, rgb(91,28,250) 100%);
-  background-image: -webkit-linear-gradient( -142deg, rgb(253,114,99) 0%, rgb(172,71,175) 37%, rgb(91,28,250) 100%);
-  background-image: -ms-linear-gradient( -142deg, rgb(253,114,99) 0%, rgb(172,71,175) 37%, rgb(91,28,250) 100%);
-  box-shadow: 0px 11px 43px 0px rgba(0, 0, 0, 0.16);
+	background-image: -moz-linear-gradient( -142deg, rgb(253,114,99) 0%, rgb(172,71,175) 37%, rgb(91,28,250) 100%);
+	background-image: -webkit-linear-gradient( -142deg, rgb(253,114,99) 0%, rgb(172,71,175) 37%, rgb(91,28,250) 100%);
+	background-image: -ms-linear-gradient( -142deg, rgb(253,114,99) 0%, rgb(172,71,175) 37%, rgb(91,28,250) 100%);
+	box-shadow: 0px 11px 43px 0px rgba(0, 0, 0, 0.16);
 }
 
 a.btn.btn-small,
@@ -469,7 +469,7 @@ common-banner
 }
 .box-for-footer{
 	position: relative;
-    top: -16px;
+	top: -16px;
 }
 .box-wrapper{
 	max-width:1024px;
@@ -879,9 +879,7 @@ footer p, .common-nav a, footer img {
 
 }
 
-/*==========================
-gas-details
-==========================*/
+/*========================== gas-details ==========================*/
 
 .box-wrapper-head{
 	text-align: center;
@@ -974,11 +972,8 @@ gas-details
 }
 
 
-/*.select .selectize-control.single .selectize-input #gas-select-selectized,
-.select .selectize-control.single .selectize-input #gas-select-selectized::placeholder,*/
 .select .selectize-control .selectize-input input::placeholder,
 .select .selectize-control .selectize-input {
-	/*height: 90px;*/
 	line-height: 80px;
 	width: 100%;
 	border:none;
@@ -1003,10 +998,6 @@ gas-details
 .select .selectize-control.single .selectize-input.dropdown-active:after {
 	transform: rotate(180deg);
 }
-/* 
-.select .selectize-control.single .selectize-input #gas-select-selectized {
-	width: 100% !important;
-} */
 
 select#gas-select,
 select.identity-select {
@@ -1439,22 +1430,20 @@ select.identity-select {
 		text-align: left;
 	}
 }
-/* ===========================
-		DATEPICKER
-============================*/
+/* =========================== DATEPICKER ============================*/
 .my-datepicker{
 	width: 100%;
-    box-shadow: 0px 8px 43px 0px rgba(0, 0, 0, 0.25);
-    margin-top: 6px;
-    padding: 40px 20%;
+	box-shadow: 0px 8px 43px 0px rgba(0, 0, 0, 0.25);
+	margin-top: 6px;
+	padding: 40px 20%;
 }
 
 .datepicker-inline {
-    width: 100%;
+	width: 100%;
 }
 .my-datepicker td{
 	padding: 9px;
-    font-size: 35px;
+	font-size: 35px;
 }
 .day{
 	padding: 11px !important; 
@@ -1468,18 +1457,13 @@ select.identity-select {
 
 .table-condensed thead > tr:nth-child(2){
 
-    border: 14px solid #dbd9d9;
+	border: 14px solid #dbd9d9;
 	outline: white solid 10px;
 	box-shadow: 0px 8px 43px 0px rgba(0, 0, 0, 0.25);
-    line-height: 60px;
+	line-height: 60px;
 }
-/*.datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active {
-    background-color: #003399 ;
-    border-radius: 50%;
-}*/
-/* ===========================
-		DATEPICKER END
-============================*/
+
+/* =========================== DATEPICKER END ============================*/
 
 /*MElectricity measure*/
 .gradient-banner .text {
@@ -1756,13 +1740,13 @@ select.identity-select {
 
 /* Electricity measure*/
 .electricity-measure .gradient-banner {
-background: -moz-linear-gradient(45deg, #fd7263 0%, #5b1cfa 100%)!important; /* ff3.6+ */
-background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #fd7263), color-stop(100%, #5b1cfa)); /* safari4+,chrome */
-background: -webkit-linear-gradient(45deg, #fd7263 0%, #5b1cfa 100%)!important; /* safari5.1+,chrome10+ */
-background: -o-linear-gradient(45deg, #fd7263 0%, #5b1cfa 100%)!important; /* opera 11.10+ */
-background: -ms-linear-gradient(45deg, #fd7263 0%, #5b1cfa 100%)!important; /* ie10+ */
-background: linear-gradient(45deg, #fd7263 0%, #5b1cfa 100%)!important; /* w3c */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', endColorstr='#fd7263',GradientType=1 ); /* ie6-9 */
+	background: -moz-linear-gradient(45deg, #fd7263 0%, #5b1cfa 100%)!important; /* ff3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #fd7263), color-stop(100%, #5b1cfa)); /* safari4+,chrome */
+	background: -webkit-linear-gradient(45deg, #fd7263 0%, #5b1cfa 100%)!important; /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(45deg, #fd7263 0%, #5b1cfa 100%)!important; /* opera 11.10+ */
+	background: -ms-linear-gradient(45deg, #fd7263 0%, #5b1cfa 100%)!important; /* ie10+ */
+	background: linear-gradient(45deg, #fd7263 0%, #5b1cfa 100%)!important; /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', endColorstr='#fd7263',GradientType=1 ); /* ie6-9 */
 }
 
 .electricity-measure .gradient-banner #Layer_1 {
@@ -1857,11 +1841,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', end
 .sponsored .electricity-compare ul, .sponsored .gas-compare ul{
 	list-style-image: url(../image/plus-li.png);
 	margin-left: 15px;
-	    filter: brightness(0) invert(1);
+	filter: brightness(0) invert(1);
 }
 
 .sponsored {
-    background-color: #5b1cfa;
+	background-color: #5b1cfa;
 }
 .apply-now, .compare-detail .cimet-btn.purple {
 	min-width: auto;
@@ -2021,7 +2005,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', end
 }
 
 .table-box p {
-	    margin: 22px 30px 10px 30px;
+	margin: 22px 30px 10px 30px;
 }
 
 .table-box .wrapper-inner-div {
@@ -2140,7 +2124,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', end
 .identification .selectize-input, 
 .identification .selectize-control.single .selectize-input.input-active {
 	border: 10px solid white !important;
-    box-shadow: -1px 2px 43px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: -1px 2px 43px 0px rgba(0, 0, 0, 0.25);
 }
 
 .identification .common-details-inner-div .wrapper-inner-div:last-child {
@@ -2172,8 +2156,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', end
 }
 
 h2.address-title {
-	    margin-top: 60px;
-    margin-bottom: 50px;
+	margin-top: 60px;
+	margin-bottom: 50px;
 }
 
 .distributor form button.form-control {
@@ -2182,27 +2166,27 @@ h2.address-title {
 }
 
 .icon-circle {
-    height: 88px;
-    width: 88px;
-    background: #0a0d80;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	height: 88px;
+	width: 88px;
+	background: #0a0d80;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin-right: 20px;
 }
 
 .review .scroll-result-three {
-margin-top: -300px;
+	margin-top: -300px;
 }
 
 .review .verification {
-	    display: inline-block;
-    vertical-align: top;
-    margin-top: 220px;
-    background: white;
-    width: 440px;
-    text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 220px;
+	background: white;
+	width: 440px;
+	text-align: center;
 }
 
 .review .scroll-result-three .filter-box {
@@ -2212,7 +2196,7 @@ margin-top: -300px;
 .review .scroll-result-three .verify-title {
 	background: #0a0d80 !important;
 	padding: 0 30px;
-    text-transform: capitalize;
+	text-transform: capitalize;
 }
 
 .verify-code {
@@ -2233,8 +2217,22 @@ margin-top: -300px;
 	display: block;
 	padding: 30px 20px;
 	color: #0a0d80;	
-  box-shadow: 0px 8px 43px 0px rgba(0, 0, 0, 0.25);
-  width: 100%;
+	box-shadow: 0px 8px 43px 0px rgba(0, 0, 0, 0.25);
+	width: 100%;
+	position: relative;
+}
+
+.verification .according-btn-details::before {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 16px solid transparent;
+	border-right: 16px solid transparent;
+	border-bottom: 16px solid white;
+	top:-16px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .resend {
@@ -2288,11 +2286,18 @@ margin-top: -300px;
 	align-items: flex-start;
 }
 
-.row-header .bill-info img {
-	align-self: flex-start;
+.brand-logo {
+	padding-left: 35px;
+	padding-right: 35px;	
 }
 
-.cls-1 {
-                                fill: #fb9734;
-                                fill-rule: evenodd;
-                            }
+.brand-logo .energy-type {
+	width: 108px;
+	margin-right: 15px;
+}
+
+.brand-logo .energy-type img {
+	width: 100% !important;
+	padding:0!important;
+	border: none!important;
+}

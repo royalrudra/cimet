@@ -28,66 +28,66 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/search-result.css">
 
-<style>
+    <style>
 
-.scroll-result-three{
+    .scroll-result-three{
 
-    overflow-y: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    top: -162px;
-    /* left: 70px; */
-    /* width: calc(100% - 418px); */
-    height: 1180px;
-    padding-bottom: 40px;
+        overflow-y: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: -162px;
+        /* left: 70px; */
+        /* width: calc(100% - 418px); */
+        height: 1180px;
+        padding-bottom: 40px;
 
-}
-.scroll-results-two {
-    overflow-y: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    top: 62px;
-    margin-bottom: 80px;
-    /* width: calc(100% - 418px); */
-    height: 1180px;
-    padding-bottom: 40px;
-}
+    }
+    .scroll-results-two {
+        overflow-y: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 62px;
+        margin-bottom: 80px;
+        /* width: calc(100% - 418px); */
+        height: 1180px;
+        padding-bottom: 40px;
+    }
 
 
     .compare-star{
         position: relative;
-    left: -25px;
-    /* padding-top: 0px; */
-    top: -11px;
+        left: -25px;
+        /* padding-top: 0px; */
+        top: -11px;
     }
     .star + label {
-    font-size: 48px;
-    cursor: pointer;
-    width: 26px;
-    height: 45px;
-    position: relative;
-}
-.common-banner-one {
-    min-height: 550px;
-}
-.rate-tab td,tr{
-    border-bottom: 1px solid #c3b7b7a6;
-}
-.rate-tab {
-    display: flex;
-}
+        font-size: 48px;
+        cursor: pointer;
+        width: 26px;
+        height: 45px;
+        position: relative;
+    }
+    .common-banner-one {
+        min-height: 550px;
+    }
+    .rate-tab td,tr{
+        border-bottom: 1px solid #c3b7b7a6;
+    }
+    .rate-tab {
+        display: flex;
+    }
 </style>
-    
+
 </head>
 <!--head end-->
 <body class="compare-result fullbody">
@@ -130,7 +130,7 @@
   <!-- scrolling portions start here using simple flex!!! -->
 
   <section class="scroll-filter container" style="height: 1120px; justify-content: space-around;">
-    
+
     <!-- plan details end -->
     <div class="scroll-result-three">
 
@@ -143,19 +143,21 @@
 
                 </div>
                 <div class="brand-logo">
-                    <img src="image/electricity-details.png" alt="" style="padding-left: 35px;">
-                    <img src="image/energy1.png" style="padding-right: 35px;">
+                    <div class="energy-type">
+                        <img src="image/electricity-details.png" alt="">                        
+                    </div>
+                    <img src="image/energy1.png">
 
                 </div>
                 <div class="price-tag">
                     <div class="prices">
-                    <h1>$1,245</h1> 
-                    <h2> or</h2>
-                    <h2>$1899</h2>
+                        <h1>$1,245</h1> 
+                        <h2> or</h2>
+                        <h2>$1899</h2>
                         
-                    <div class="note">
-                        <img src="image/note.png">                        
-                    </div>
+                        <div class="note">
+                            <img src="image/note.png">                        
+                        </div>
                     </div>
                     <p>Estimated bill with discount incl. GST</p>
                 </div>
@@ -229,13 +231,15 @@
         <div class="filter-box">
             <div class="filter">
                 <div class="filter-box-header">
-                        <p class="super-top-header">Chosen electricity provider </p>
+                    <p class="super-top-header">Chosen electricity provider </p>
                     <p class="top-filter-header">top deal</p>
                     <p class="bottom-filter-header">anytime saver - Home - Peak only</p>
 
                 </div>
-                <div class="brand-logo">
-                    <img src="image/electricity-details.png" alt="" style="padding-left: 35px;">
+                 <div class="brand-logo">
+                    <div class="energy-type">
+                        <img src="image/electricity-details.png" alt="">                        
+                    </div>
                     <img src="image/energy1.png">
 
                 </div>
@@ -316,61 +320,61 @@
                       </table>
 
                       <table class="total-price">
-                            <tr>
-                              <th></th>
-                              <th>Network distribution</th>
-                              <th class="rate-info">Ausgrid</th>
+                        <tr>
+                          <th></th>
+                          <th>Network distribution</th>
+                          <th class="rate-info">Ausgrid</th>
 
-                          </tr>
-                          <tr>
-                            <td>Daily supply charge</td>
-                              <td>92.75 cents /day</td>
-                              <td class="rate-info">102.025 cents /day</td>
+                      </tr>
+                      <tr>
+                        <td>Daily supply charge</td>
+                        <td>92.75 cents /day</td>
+                        <td class="rate-info">102.025 cents /day</td>
 
-                          </tr>
-                          <tr>
-                              <td>Peak all usage</td>
-                              <td>29.87 cents / kWh</td>
-                              <td class="rate-info">32.857 cents / kWh</td>
+                    </tr>
+                    <tr>
+                      <td>Peak all usage</td>
+                      <td>29.87 cents / kWh</td>
+                      <td class="rate-info">32.857 cents / kWh</td>
 
-                          </tr>
+                  </tr>
 
-                      </table>
-                      <p>The rates displayed are indicative prices based on the rates our participating providers have provided us for your postcode and information provided by you. The supplier you select will inform you of the rates which will apply depending on the network and the type of meter configuration at the property for which you are signing up for. If the meter type configuration or network is identified to be different by your chosen provider then your rates may be different from the one shown below. You will be advised of this by the provider you choose.</p>
+              </table>
+              <p>The rates displayed are indicative prices based on the rates our participating providers have provided us for your postcode and information provided by you. The supplier you select will inform you of the rates which will apply depending on the network and the type of meter configuration at the property for which you are signing up for. If the meter type configuration or network is identified to be different by your chosen provider then your rates may be different from the one shown below. You will be advised of this by the provider you choose.</p>
 
-                  </div>
-                  <div class="two-rate-content">
+          </div>
+          <div class="two-rate-content">
 
-                  </div>
-                </div>
+          </div>
+      </div>
 
-                <button class="accordion">Calculation Details</button>
-                <div class="panel">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <button class="accordion">Addition Details</button>
-                <ul class="panel">
-                    <li>24 Month benefit</li>
-                    <li>No exit Fees or lock-in Contract</li>
-                    <li>No Bonus</li>
-                    <li>Solor Compatable</li>
-                </ul>
-            </div>
-            <button class="compare-btn according-btn">APPLY FOR THIS PLAN</button>
-            <div class="according-btn-details">
-                <button class="view-btn">view Details</button>
-                <button class="remove-btn">Remove this section</button>
-            </div>
-
-
-            <!-- end of accordion -->
-        </div>
-
-
-
-       
-
+      <button class="accordion">Calculation Details</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
+    <button class="accordion">Addition Details</button>
+    <ul class="panel">
+        <li>24 Month benefit</li>
+        <li>No exit Fees or lock-in Contract</li>
+        <li>No Bonus</li>
+        <li>Solor Compatable</li>
+    </ul>
+</div>
+<button class="compare-btn according-btn">APPLY FOR THIS PLAN</button>
+<div class="according-btn-details">
+    <button class="view-btn">view Details</button>
+    <button class="remove-btn">Remove this section</button>
+</div>
+
+
+<!-- end of accordion -->
+</div>
+
+
+
+
+
+</div>
 </section>
 
 <!-- scrolling ends here -->
@@ -382,14 +386,14 @@
 
 
 <footer class= "bottom_footer hidden-sm-down inner-footer">
-<p><img src="image/security.png">Your security guaranteed</p>
-<nav class="common-nav">
-<a class="nav-link" href="#">ABOUT US</a>
-<a class="nav-link" href="#">TERMS & CONDITIONS</a>
-</nav>
-<p class="copy_right">
-© 2017 BulkTTTbargains. ABN 81 609 882 804 Australian Credit License Number 483595
-</p>
+    <p><img src="image/security.png">Your security guaranteed</p>
+    <nav class="common-nav">
+        <a class="nav-link" href="#">ABOUT US</a>
+        <a class="nav-link" href="#">TERMS & CONDITIONS</a>
+    </nav>
+    <p class="copy_right">
+        © 2017 BulkTTTbargains. ABN 81 609 882 804 Australian Credit License Number 483595
+    </p>
 </footer>
 
 
@@ -397,37 +401,37 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script>
 
-$(() => {
-    $(".accordion").click(function() {
-        reset(this) 
-         $(this).addClass("active") ;
-          $(this).next().toggle();
+    $(() => {
+        $(".accordion").click(function() {
+            reset(this) 
+            $(this).addClass("active") ;
+            $(this).next().toggle();
+        })
+
+        const reset = self => {
+            let all = selector => $(self).parent().find(selector);
+            all(".accordion").removeClass("active") && all(".panel").hide();
+        } 
     })
-    
-    const reset = self => {
-        let all = selector => $(self).parent().find(selector);
-        all(".accordion").removeClass("active") && all(".panel").hide();
-    } 
-})
 
-jQuery(function($) {
+    jQuery(function($) {
 
-$(".option-heading").click(function() {
-  $(this).next(".option-content").stop().slideToggle(350);
-  $(this).find(".arrow-up, .arrow-down").toggle();
-});
+        $(".option-heading").click(function() {
+          $(this).next(".option-content").stop().slideToggle(350);
+          $(this).find(".arrow-up, .arrow-down").toggle();
+      });
 
-});
+    });
 
-jQuery(function($) {
+    jQuery(function($) {
 
-$(".option-heading").click(function() {
-  $(this).toggleClass('show');
-  
-});
+        $(".option-heading").click(function() {
+          $(this).toggleClass('show');
+
+      });
 
 
-});
+    });
 
 
 </script>
