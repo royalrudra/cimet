@@ -248,6 +248,7 @@
 
 .scroll-result-three .filter-box-header p, 
 .compare-result .accordion, 
+
 .compare-result .brand-logo, 
 .compare-result .filter-tag {
     display: flex;
@@ -525,6 +526,7 @@ button.accordion.active:after {
 
 .scroll-result-three .filter-box {
     width: 460px;
+
     float: left;
 }
 

@@ -53,9 +53,10 @@
           display: block;
           position: absolute;
           color: orange;
-          top: 11px;
+          top: 50%;
           left: 10px;
           font: 1.5em 'FontAwesome';
+          transform: translateY(-50%);
         }
         
         
@@ -68,7 +69,7 @@
 
 </head>
 <!--head end-->
-<body class="life-support">
+<body class="create-account">
     <div class="common-head">
         <div class="text">
             <h4>Surb, 2100, NSW <span><img src="image/common-head.png"></span></h4>
@@ -112,24 +113,19 @@ suppliers</p>
              <div class="notice-bottom">
                 <div class="row form-checkbox">
                     <div class="form-check manual-check">
-                        <!-- <label class="check-container"> Enter manually
-                          <input type="radio" name="radio">
-                          <span class="checkmark"></span>
-                        </label> -->
-    
-                        <input type="checkbox" id="manual-check">
+                          <input type="checkbox" id="manual-check">
                         <label for="manual-check">
-                          Enter manually
+                          I have read and accepted the Terms and Conditions & Privacy Policy, and acknowledge that 
+CIMET and BulkBargain recommends plans from a range of providers on its Approved Product 
+List.
                         </label>
     
                       </div>
 
+               <!--  <div class="note">
+                    <p></p>
+                </div> -->
                 </div> 
-                <div class="note">
-                    <p>I have read and accepted the Terms and Conditions & Privacy Policy, and acknowledge that 
-CIMET and BulkBargain recommends plans from a range of providers on its Approved Product 
-List.</p>
-                </div>
                 <div class="action-buttons">
                     <button class="cimet-btn grey previous" onclick="location.href='#';">Previous</button>
                     <button class="cimet-btn" onclick="location.href='#';">Submit</button>
