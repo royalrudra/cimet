@@ -95,7 +95,7 @@
         <section class="fullbody_content">
             <div class="common-head">
                 <div class="text">
-                    <h4>Your search results</h4>
+                    <h4>Congratulations</h4>
                 </div>
             </div>
             <div class="common-banner-one gradient-banner">
@@ -103,18 +103,7 @@
                 <div class="text">                    
                     <h4><span><img src="image/marker-white.png"></span>2324, Baluckera, NSW <span><img src="image/common-head.png"></span></h4>
                 </div>
-                <h1 class="white">Here are your choice to compare.<br></h1>
-                <div class="filter-container">
-                    <div class="compare-result-header ">
-                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                        <p>Electricity -Comparing 4 results</p>
-                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                    </div>
-
-                   
-
-                </div>
-                
+                <h2 class="white">Your chosen provider(s)</h2>                
 
                 <div class="circle1">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -154,16 +143,21 @@
 
                 </div>
                 <div class="brand-logo">
-                    <img src="image/electricity.png" alt="" style="padding-left: 35px;">
+                    <img src="image/electricity-details.png" alt="" style="padding-left: 35px;">
                     <img src="image/energy1.png" style="padding-right: 35px;">
 
                 </div>
                 <div class="price-tag">
+                    <div class="prices">
                     <h1>$1,245</h1> 
-                    <h5> or  $1899</h5>
+                    <h2> or</h2>
+                    <h2>$1899</h2>
+                        
                     <div class="note">
                         <img src="image/note.png">                        
                     </div>
+                    </div>
+                    <p>Estimated bill with discount incl. GST</p>
                 </div>
             </div>
             <!-- <div class="clearfix"></div> -->
@@ -172,12 +166,17 @@
             <div class="filter-accordion">
 
                 <button class="accordion active">Key features</button>
-                <ul class="panel" style="display:block">
-                    <li>24 Month benefit</li>
-                    <li>No exit Fees or lock-in Contract</li>
-                    <li>No Bonus</li>
-                    <li>Solor Compatable</li>
-                </ul>
+                <div class="panel" style="display:block">
+                    <div class="panel-content">
+                        <h3>Pay On Time Discount</h3>
+                        <p>Under Alinta's Fair Deal 23 plan you will receive 23% off Alinta's published Standing Tariffs for each account you pay on time and in full. The pay on time discount applies to usage charges only and does not include supply charges or other charges payable under this energy offer.</p>
+                    </div>
+
+                    <div class="panel-content">
+                        <h3>Benefit Period</h3>
+                        <p>Alinta's benefit period applies for 24 months from the commencement date. No Contract Term. No Exit Fees.</p>
+                    </div>
+                </div>
                 <button class="accordion">Why us?</button>
                 <ul class="panel">
                     <li>24 Month benefit</li>
@@ -236,12 +235,8 @@
 
                 </div>
                 <div class="brand-logo">
+                    <img src="image/electricity-details.png" alt="" style="padding-left: 35px;">
                     <img src="image/energy1.png">
-
-                    <div class="compare-star">
-            <input class="star" id="compare" type="checkbox" title="bookmark page">
-            <label for="compare"></label>
-        </div>  
 
                 </div>
                 <div class="filter-tag">
@@ -279,52 +274,75 @@
                     <li>Solor Compatable</li>
                 </ul>
                 <button class="accordion">Rates details</button>
-                <ul class="panel">
+                <div class="panel">
                     <div class="rate-tab">
-                            <div class="Single-rate">Single Rate </div>
-                            <div class="two-rate">Two Rate </div>
+                        <div class="Single-rate">Single Rate </div>
+                        <div class="two-rate">Two Rate </div>
                     </div>
                     <div class="single-rate-content">
-                        
-<table>
-        <tr>
-          <th>Network distribution</th>
-          <th>Ausgrid</th>
-          
-        </tr>
-        <tr>
-          <td>Connection Fee</td>
-          <td>No Standard Connection Fee</td>
-         
-        </tr>
-        <tr>
-          <td>Disconnection Fee</td>
-          <td>No Standard Connection Fee</td>
-          
-        </tr>
-        <tr>
-          <td>Effective Fee</td>
-          <td>DD/MM/YY</td>
-          
-        </tr>
-        <tr>
-          <td>Tariff Description</td>
-          <td>Residential Peak Only</td>
-          
-        </tr>
-        <tr>
-          <td>Rate Type</td>
-          <td>peak_only</td>
-          
-        </tr>
-        
-      </table>
-      
-                    </div>
-                    <div class="two-rate-content">
 
-                    </div>
-                </ul>
+                        <table>
+                            <tr>
+                              <th>Network distribution</th>
+                              <th class="rate-info">Ausgrid</th>
+
+                          </tr>
+                          <tr>
+                              <td>Connection Fee</td>
+                              <td class="rate-info">No Standard Connection Fee</td>
+
+                          </tr>
+                          <tr>
+                              <td>Disconnection Fee</td>
+                              <td class="rate-info">No Standard Connection Fee</td>
+
+                          </tr>
+                          <tr>
+                              <td>Effective Fee</td>
+                              <td class="rate-info">DD/MM/YY</td>
+
+                          </tr>
+                          <tr>
+                              <td>Tariff Description</td>
+                              <td class="rate-info">Residential Peak Only</td>
+
+                          </tr>
+                          <tr>
+                              <td>Rate Type</td>
+                              <td class="rate-info">peak_only</td>
+
+                          </tr>
+
+                      </table>
+
+                      <table class="total-price">
+                            <tr>
+                              <th></th>
+                              <th>Network distribution</th>
+                              <th class="rate-info">Ausgrid</th>
+
+                          </tr>
+                          <tr>
+                            <td>Daily supply charge</td>
+                              <td>92.75 cents /day</td>
+                              <td class="rate-info">102.025 cents /day</td>
+
+                          </tr>
+                          <tr>
+                              <td>Peak all usage</td>
+                              <td>29.87 cents / kWh</td>
+                              <td class="rate-info">32.857 cents / kWh</td>
+
+                          </tr>
+
+                      </table>
+                      <p>The rates displayed are indicative prices based on the rates our participating providers have provided us for your postcode and information provided by you. The supplier you select will inform you of the rates which will apply depending on the network and the type of meter configuration at the property for which you are signing up for. If the meter type configuration or network is identified to be different by your chosen provider then your rates may be different from the one shown below. You will be advised of this by the provider you choose.</p>
+
+                  </div>
+                  <div class="two-rate-content">
+
+                  </div>
+                </div>
 
                 <button class="accordion">Calculation Details</button>
                 <div class="panel">
