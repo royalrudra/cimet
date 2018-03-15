@@ -11,18 +11,19 @@
     height: auto;
     position: relative;
     z-index: 111;
-    background-color: #0a0d7f;
+   /* background-color: #0a0d7f;
     width: 73px;
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 0;
+    line-height: 0;*/
 }
 
 
 .header-box{
     display: flex;
     justify-content: space-between;
+    border-bottom: 4px solid #dbd9d9;
 }
 
 /* menu  */
