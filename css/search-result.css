@@ -245,7 +245,10 @@
 
 }
 
-.compare-result .accordion, .compare-result .brand-logo, .compare-result .filter-tag {
+.scroll-result-three .filter-box-header p, 
+.compare-result .accordion, 
+.compare-result .brand-logo, 
+.compare-result .filter-tag {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -362,7 +365,51 @@ button.accordion.active:after {
     background-color: #fd7263;
 }
 
+.scroll-result-three .price-tag {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
 
+.scroll-result-three .price-tag .prices {
+    position: relative;    
+
+}
+
+.scroll-result-three .price-tag .prices h1,
+.scroll-result-three .price-tag .prices h2 {
+    display: inline-block;
+}
+
+.scroll-result-three .price-tag .note {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: 0;
+    transform: translateY(-50%);
+}
+.scroll-result-three .price-tag .note img {
+    margin-bottom: 0;
+}
+
+.panel-content p {
+    color: #0a0d80;
+    margin: 30px 0;
+}
+
+.rate-tab {
+    background-color: #efefef;
+}
+
+.rate-tab div {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:6px 20px;
+    border-radius: 10px;
+    min-width: 134px;
+}
 
 
 
@@ -456,7 +503,58 @@ button.accordion.active:after {
 .accordion-option .toggle-accordion.active:before {
     content: "Collapse All";
 }
-.super-top-header{
+
+.scroll-result-three .filter-box-header p {
+    justify-content: center;
+}
+
+.super-top-header {
     color: white;
-    background: -moz-linear-gradient(-142deg, #fd7263 0%, #5b1cfa 100%) !important; background: -webkit-linear-gradient(-142deg, #fd7263 0%,#5b1cfa 100%) !important; background: linear-gradient(-142deg, #fd7263 0%,#5b1cfa 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd7263', endColorstr='#5b1cfa',GradientType=1 ); background: #fd7263; background: -moz-linear-gradient(-142deg, #fd7263 0%, #5b1cfa 100%) !important; background: -webkit-linear-gradient(-142deg, #fd7263 0%,#5b1cfa 100%) !important; background: linear-gradient(-142deg, #fd7263 0%,#5b1cfa 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd7263', endColorstr='#5b1cfa',GradientType=1 );
+    background: -moz-linear-gradient(-142deg, #fd7263 0%, #5b1cfa 100%) !important;
+     background: -webkit-linear-gradient(-142deg, #fd7263 0%,#5b1cfa 100%) !important; 
+     background: linear-gradient(-142deg, #fd7263 0%,#5b1cfa 100%) !important; 
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd7263', endColorstr='#5b1cfa',GradientType=1 ); 
+     height: 92px;
+}
+
+.scroll-result-three .super-top-header {
+    font-family: 'muliextrabold';
+    font-size: 22px;
+}
+
+.scroll-result-three .filter-box {
+    width: 460px;
+}
+
+.scroll-result-three .single-rate-content table {
+    margin: 40px auto;
+    color: #454444;
+}
+
+
+.scroll-result-three .single-rate-content table th,
+.scroll-result-three .single-rate-content table td {
+    padding:20px 0;
+}
+
+td.rate-info {
+    font-weight: bold;
+}
+
+.total-price {
+    background-color: #dbd9d9;
+    border: 7px solid #dbd9d9;
+}
+
+.total-price tr:not(:first-child){
+    background: white;
+
+}
+
+.filter-box{
+    /*overflow: scroll;*/
+}
+.scroll-result-three .single-rate-content table.total-price td{
+    padding-left: 10px;
+    padding-right: 10px;
 }
