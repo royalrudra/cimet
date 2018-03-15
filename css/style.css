@@ -413,16 +413,21 @@ a.btn.btn-small,
 	outline: none;
 }
 
+.action-buttons.circle
+.noactive{
+background: #dbd9d9;
+}
+
 .action-buttons.circle button:hover,
 .action-buttons.circle button.active {
-	background-color: #dbd9d9;
+	background-color:#fb9734;
 	color: white;
 	box-shadow: none;
 }
 
 .action-buttons.circle .previous:hover,
 .action-buttons.circle .previous.active {
-	background-color: #fb9734;
+	background-color: #dbd9d9;
 	color: #0a0d80;
 	box-shadow: none;
 }
@@ -2184,4 +2189,8 @@ h2.address-title {
     justify-content: center;
     align-items: center;
 	margin-right: 20px;
+}
+.header-side-bar{
+	display: flex;
+    justify-content: space-between;
 }

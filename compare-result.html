@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/search-result.css">
+    <link rel="stylesheet" href="css/navopen.css">
 
 <style>
     .compare-star{
@@ -42,6 +43,64 @@
     height: 45px;
     position: relative;
 }
+.box-outer{
+ margin-top: -130px;    
+    z-index: 0;    
+    position: relative;
+    padding-top: 0;
+}
+
+html{
+ min-height: 100%;
+}
+
+body{
+ min-height: 100%;
+ position: relative;
+ height: auto;
+ display: block;
+}
+
+footer{
+ position: absolute;
+ bottom: 0;
+}
+
+.electricity-measure .box-wrapper{
+ margin-bottom: 0;
+}
+
+.fullbody_wrapper{
+ padding-bottom: 110px; 
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #f3f3f3;
+}
+
+.menu-sticky{
+    position: relative;
+    z-index: 111;
+    /*background-color: #0a0d7f;*/
+    width: 74px;
+    height: 73px;
+    margin-top: -4px;
+    display: flex;
+    margin-bottom: -4px;
+    /* margin-top: -1px; */
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    display: none;
+    top: -1px;
+    left: 67px;
+}
+.menu-show{
+    display: flex;
+}
 </style>
     
 </head>
@@ -49,10 +108,17 @@
 <body class="compare-result fullbody">
     <div class="fullbody_wrapper">
         <section class="fullbody_content">
+            <div class="header-box header-side-bar">
             <div class="common-head">
                 <div class="text">
                     <h4>Your search results</h4>
                 </div>
+            </div>
+
+            <div class="menu  menu-open" style="z-index:300">
+                    <img class="menu-img" src="image/menu.png">
+                </div>
+    
             </div>
             <div class="common-banner gradient-banner">
 
@@ -157,8 +223,8 @@
                     <img src="image/energy1.png">
 
                     <div class="compare-star">
-            <input class="star" id="compare3" type="checkbox" title="bookmark page">
-            <label for="compare3"></label>
+            <input class="star" id="compare" type="checkbox" title="bookmark page">
+            <label for="compare"></label>
         </div>  
 
                 </div>
@@ -241,8 +307,8 @@
                     <img src="image/energy1.png">
 
                     <div class="compare-star">
-            <input class="star" id="compare1" type="checkbox" title="bookmark page">
-            <label for="compare1"></label>
+            <input class="star" id="compare" type="checkbox" title="bookmark page">
+            <label for="compare"></label>
         </div>  
 
                 </div>
@@ -323,8 +389,8 @@
                     <img src="image/energy1.png">
 
                     <div class="compare-star">
-            <input class="star" id="compare2" type="checkbox" title="bookmark page">
-            <label for="compare2"></label>
+            <input class="star" id="compare" type="checkbox" title="bookmark page">
+            <label for="compare"></label>
         </div>  
 
                 </div>
@@ -406,8 +472,8 @@
                     <img src="image/energy1.png">
 
                     <div class="compare-star">
-            <input class="star" id="compare2" type="checkbox" title="bookmark page">
-            <label for="compare2"></label>
+            <input class="star" id="compare" type="checkbox" title="bookmark page">
+            <label for="compare"></label>
         </div>  
 
                 </div>
@@ -486,6 +552,86 @@
 </div>
 
 
+
+<div class="nav-open ">
+        <div class="common-banner gradient-banner nav-full-height">
+                <div class="circle1">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="577px" height="577px" viewBox="0 0 577 577" enable-background="new 0 0 577 577" xml:space="preserve">
+                  <image overflow="visible" width="484" height="534" xlink:href="96C9D047.jpg"  transform="matrix(0.9999 0 0 0.9999 3625.0435 2210.6956)">
+                  </image>
+                  <path fill="#F8B752" d="M4132,2344.5h233V2211C4365,2211,4222,2207,4132,2344.5z"/>
+                  <path fill="#F8B752" d="M4598,2344.667h-233v-133.5C4365,2211.167,4508,2207.167,4598,2344.667z"/>
+                  <circle fill="#F8B752" cx="288.5" cy="288.5" r="288.5"/>
+              </svg>
+          </div>
+          <!-- common banner and gradient banner  ends -->
+          <div class="circle2">
+            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="465px" height="136.5px" viewBox="0 0 465 136.5" enable-background="new 0 0 465 136.5" xml:space="preserve">
+            <image overflow="visible" width="484" height="534" xlink:href="D913F96F.jpg"  transform="matrix(0.9999 0 0 0.9999 -506.9565 2.6957)">
+            </image>
+            <path fill="#F8B752" d="M0,136.5h233V3C233,3,90-1,0,136.5z"/>
+            <path fill="#F8B752" d="M466,136.667H233V3.167C233,3.167,376-0.833,466,136.667z"/>
+        </svg>    
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                    <div class="menu-list">
+                            <div class="menu-item-logo">
+                                <img src="image/dashboard.png" alt="">
+                            </div>
+                            <div class="menu-item">
+                                <h1>Your Dashboard</h1>
+                            </div>
+                    </div>
+            </div>
+            <div class="col-sm-12">
+                    <div class="menu-list">
+                            <div class="menu-item-logo">
+                                <img src="image/filter.png" alt="">
+                            </div>
+                            <div class="menu-item">
+                                <h1>Filter Results</h1>
+                            </div>
+                    </div>
+            </div>
+            <div class="col-sm-12">
+                    <div class="menu-list">
+                            <div class="menu-item-logo">
+                                <img src="image/compare.png" alt="">
+                            </div>
+                            <div class="menu-item">
+                                <h1>Compare Results</h1>
+                            </div>
+                    </div>
+            </div>
+            <div class="col-sm-12">
+                    <div class="menu-list">
+                            <div class="menu-item-logo">
+                                <img src="image/apply.png" alt="">
+                            </div>
+                            <div class="menu-item">
+                                <h1>Apply</h1>
+                            </div>
+                    </div>
+            </div>
+                
+        
+        </div>
+        <!-- row ends -->
+       <div class="terms-sections">
+           <h3><a href="#"> terms & conditional</a></h3>
+           <h3><a href="#">About us</a></h3>
+           <h3 class="nav-security"><a href="#"><img src="image/security.png" >your security guaranteed</a></h3>
+       </div>
+    </div>
+</div> 
+</div>
+<!-- nav open -->
+
 <footer class= "bottom_footer hidden-sm-down inner-footer">
     <p><img src="image/security.png">Your security guaranteed</p>
     <nav class="common-nav">
@@ -502,6 +648,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script>
+
 
 $(() => {
     $(".accordion").click(function() {
@@ -531,7 +678,64 @@ $(".option-heading").click(function() {
   $(this).toggleClass('show');
   
 });
-  
+
+
+});
+
+
+  $(".button1").click(function() {
+        $(".nav-box").toggleClass("open");
+
+        $("body").toggleClass("open-nav");
+    })
+    
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var filterby = this.nextElementSibling;
+        if (filterby.style.display === "block") {
+            filterby.style.display = "none";
+        } else {
+            filterby.style.display = "block";
+        }
+    });
+}
+
+$(".menu-open").click(function() {
+    console.log("clicked");
+        $(".nav-open").toggleClass("open");
+
+        $("body").toggleClass("open-nav");
+    })
+
+
+var togSrc = [
+    "image/menu.png",  // normal
+    "image/nav-close.png"   // open
+];
+
+$(".menu-img").click(function(){
+  this.src = togSrc[ this.src.match('menu') ? 1 : 0 ];
+});  
+
+
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 380) {
+       $(".full-nav").addClass('sticky');
+     $(".menu-sticky").addClass('menu-show');
+       
+    }
+    else {
+       $('.full-nav').removeClass('sticky');
+     $('.menu-sticky').removeClass('menu-show');
+       
+    }
+});
+
+
 </script>
 
 </body>
