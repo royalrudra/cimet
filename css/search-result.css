@@ -247,6 +247,7 @@
 
 .scroll-result-three .filter-box-header p, 
 .compare-result .accordion, 
+.review .accordion,
 .compare-result .brand-logo, 
 .compare-result .filter-tag {
     display: flex;

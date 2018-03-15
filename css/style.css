@@ -1829,6 +1829,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', end
 	color: #9e40bb;
 }
 
+.electricity-measure .bill-gst h1, .electricity-measure .bill-discount h1 {
+	font-size: 2.2em;
+}
+
 .electricity-compare button , .gas-compare button {
 	border-radius: 0;
 }
@@ -1859,9 +1863,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b1cfa', end
 .sponsored {
     background-color: #5b1cfa;
 }
-.apply-now {
+.apply-now, .compare-detail .cimet-btn.purple {
 	min-width: auto;
 	width: 100%;
+	font-size: 0.8em;
+	padding: 13px 6px;
 }
 
 .star {
@@ -2185,3 +2191,108 @@ h2.address-title {
     align-items: center;
 	margin-right: 20px;
 }
+
+.review .scroll-result-three {
+margin-top: -300px;
+}
+
+.review .verification {
+	    display: inline-block;
+    vertical-align: top;
+    margin-top: 220px;
+    background: white;
+    width: 440px;
+    text-align: center;
+}
+
+.review .scroll-result-three .filter-box {
+	width: 775px;
+}
+
+.review .scroll-result-three .verify-title {
+	background: #0a0d80 !important;
+	padding: 0 30px;
+    text-transform: capitalize;
+}
+
+.verify-code {
+	width: 100%;
+	background-color: #dbd9d9;
+	padding:20px 15px;	
+	border: none;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.verify-code::placeholder {
+	color: #0a0d80;	
+}
+
+.verification .according-btn-details {
+	display: block;
+	padding: 30px 20px;
+	color: #0a0d80;	
+  box-shadow: 0px 8px 43px 0px rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+
+.resend {
+	margin-top: 30px;
+	color: #807f7f;
+	font-size: 0.8em;
+}
+
+.resend p>img {
+	margin-right: 8px;
+}
+
+.review  ul {
+	list-style: disc;
+}
+
+.review .acceptance h2 {
+	margin-top: 40px;
+	margin-bottom: 40px;
+
+}
+
+.acceptance-brand {
+	height: 170px;
+	border: 2px solid #f6f6f6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.acceptance .note {
+	color: #918f8f;
+	text-align: center;
+}
+
+.acceptance .note p {
+	max-width: 430px;
+}
+
+.review .common-banner h3 {
+	margin-top: 30px;
+}
+
+.review .filter-accordion ul li {
+	margin-left: 5px;
+}
+
+.row-header .bill-info {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.row-header .bill-info img {
+	align-self: flex-start;
+}
+
+.cls-1 {
+                                fill: #fb9734;
+                                fill-rule: evenodd;
+                            }
