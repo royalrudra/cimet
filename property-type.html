@@ -108,14 +108,17 @@
   
 
  $('.box-wrapper .content-list li').click(function(){
+
         $(".cls-1").css("fill","#fb9734");
+
         $(".icon-circle").removeClass("col-fill");
         $('.box-wrapper .content-list li').removeClass("active");
        
         $(this).addClass("active");
       $(this).find(".icon-circle").addClass("col-fill");
+
         $(this).find(".cls-1").css("fill","#0a0d80");
-        
+
 
     });
 </script>
