@@ -45,8 +45,8 @@
                 <div class="box-content">
                     <h2>Does anyone at the property <br>have life support equipment?</h2>
                     <div class="action-buttons circle">
-                        <button class="cimet-btn previous">Yes</button>
-                        <button class="cimet-btn grey">No</button>
+                        <button class="cimet-btn ">Yes</button>
+                        <button class="cimet-btn ">No</button>
                         <a data-toggle="collapse" href="#propertyCollapse" role="button" aria-expanded="false" aria-controls="propertyCollapse"><img src="image/note.png"></a>
                         <div class="collapse" id="propertyCollapse">
                           <div class="card card-body">
@@ -79,8 +79,8 @@
         </div>
         <h2>Are you moving?</h2>
         <div class="action-buttons circle">
-            <button class="cimet-btn previous" data-toggle="collapse" href="#movingCollapse" role="button" aria-expanded="false" aria-controls="movingCollapse">Yes</button>
-            <button class="cimet-btn grey" id="calender-close">No</button>
+            <button class="cimet-btn " data-toggle="collapse" href="#movingCollapse" role="button" aria-expanded="false" aria-controls="movingCollapse">Yes</button>
+            <button class="cimet-btn " id="calender-close">No</button>
             <div class="collapse" id="movingCollapse">
                 <div id="datepicker"  class="my-datepicker" data-date="12/03/2012">
                     <h2>When are you moving</h2>
@@ -142,8 +142,12 @@
 </script>
 <script>
     $('.action-buttons.circle button').click(function(){
-        $('.action-buttons.circle button').removeClass("active");
-        $(this).addClass("active");
+
+        $(this).parent().find('button').removeClass('active').addClass('noactive');
+        $(this).addClass('active');
+       
+       
+
     });
 </script>
 
